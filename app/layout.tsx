@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import type {Metadata} from "next";
+import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Oskar Wiktor - CV",
+  title: "Oskar Wiktor",
   description: "FrontEnd Developer Curriculum Vitae",
 };
 
@@ -27,9 +28,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <nav></nav>
+        <nav className="flex flex-col items-center w-2xs h-dvh backdrop-blur-2xl opacity-85 bg-zinc-800">
+          <Link href="/">Home</Link>
+          <Link href="/">Home</Link>
+          <Link href="/">Home</Link>
+          <Link href="/">Home</Link>
+        </nav>
         {children}
-        <footer></footer>
       </body>
     </html>
   );
