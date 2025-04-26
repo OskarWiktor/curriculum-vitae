@@ -23,12 +23,14 @@ export default function SideNavItem({ href, icon, label, subItems }: SideNavItem
 
 	const toggleOpen = () => setIsOpen((prev) => !prev);
 
+	const animationDuration = subItems ? Math.min(subItems.length * 0.1, 0.5) : 3;
+
 	return (
 		<div className='flex flex-col'>
-			<div className='flex flex-row justify-between items-center'>
+			<div className='flex flex-row justify-between items-center pl-3 pr-3'>
 				<Link
 					href={href || '#'}
-					className='flex items-center rounded-md mt-1 mb-1 pl-3 pr-3 pt-1 pb-1 group'>
+					className='flex items-center rounded-md mt-1 mb-1 pt-1 group'>
 					{icon}
 					{label}
 				</Link>
@@ -39,7 +41,7 @@ export default function SideNavItem({ href, icon, label, subItems }: SideNavItem
 						size='small'>
 						<motion.div
 							animate={{ rotate: isOpen ? 180 : 0 }}
-							transition={{ duration: 0.3 }}>
+							transition={{ duration: animationDuration }}>
 							<ChevronDown className='w-4 h-4' />
 						</motion.div>
 					</Button>
@@ -52,7 +54,7 @@ export default function SideNavItem({ href, icon, label, subItems }: SideNavItem
 						initial={{ opacity: 0, height: 0 }}
 						animate={{ opacity: 1, height: 'auto' }}
 						exit={{ opacity: 0, height: 0 }}
-						transition={{ duration: 0.3, ease: 'easeInOut' }}
+						transition={{ duration: animationDuration, ease: 'easeInOut' }}
 						className='flex flex-col ml-6 mt-1 space-y-1 text-[oklch(0.76_0_132)]'>
 						{subItems.map((item) => (
 							<Link

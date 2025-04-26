@@ -1,7 +1,9 @@
+import ProjectCard from '../ui/projectcard';
+
 export default function Page() {
-  return (
-    <main>
-      <div>Projekty Test</div>
-    </main>
-  );
+	return (
+		<div>
+			<ProjectCard></ProjectCard>
+		</div>
+	);
 }

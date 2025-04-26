@@ -31,7 +31,7 @@ export default function SideNav() {
 					icon={
 						<UserCheck
 							size={16}
-							className='mr-3 text-[oklch(0.76_0_132)]'
+							className='mr-3 text-[oklch(0.76_0_132)] group-hover:text-[oklch(0.93_0_132)]'
 						/>
 					}
 					subItems={[
@@ -47,7 +47,7 @@ export default function SideNav() {
 					icon={
 						<AppWindowMac
 							size={16}
-							className='mr-3 text-[oklch(0.76_0_132)]'
+							className='mr-3 text-[oklch(0.76_0_132)] group-hover:text-[oklch(0.93_0_132)]'
 						/>
 					}
 					subItems={[
@@ -62,7 +62,7 @@ export default function SideNav() {
 					icon={
 						<PhoneCall
 							size={16}
-							className='mr-3 text-[oklch(0.76_0_132)]'
+							className='mr-3 text-[oklch(0.76_0_132)] group-hover:text-[oklch(0.93_0_132)]'
 						/>
 					}
 				/>
