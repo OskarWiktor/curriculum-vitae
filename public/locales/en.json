@@ -1,0 +1,11 @@
+{
+  "home": {
+    "intro": "Welcome to my site!",
+    "about": "About me",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "project": {
+    "description": "Project description"
+  }
+}

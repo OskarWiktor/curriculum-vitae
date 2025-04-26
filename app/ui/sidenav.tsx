@@ -35,14 +35,14 @@ export default function SideNav() {
 						/>
 					}
 					subItems={[
-						{ href: '#intro', label: 'Wstęp' },
-						{ href: '#skills', label: 'Umiejętności' },
-						{ href: '#experience', label: 'Doświadczenie' },
+						{ href: '/#intro', label: 'Wstęp' },
+						{ href: '/#skills', label: 'Umiejętności' },
+						{ href: '/#experience', label: 'Doświadczenie' },
 					]}
 				/>
 
 				<SideNavItem
-					href='/projekty'
+					href='/projects'
 					label='Projekty'
 					icon={
 						<AppWindowMac
@@ -51,13 +51,13 @@ export default function SideNav() {
 						/>
 					}
 					subItems={[
-						{ href: '#a', label: 'Projekt A' },
-						{ href: '#b', label: 'Projekt B' },
+						{ href: '/projects#a', label: 'Projekt A' },
+						{ href: '/projects#b', label: 'Projekt B' },
 					]}
 				/>
 
 				<SideNavItem
-					href='/kontakt'
+					href='/contact'
 					label='Kontakt'
 					icon={
 						<PhoneCall

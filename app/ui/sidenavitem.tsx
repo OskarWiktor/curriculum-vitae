@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import Button from './atoms/button';
 import { ChevronDown } from '@deemlol/next-icons';
-
 interface SubItem {
 	href: string;
 	label: string;

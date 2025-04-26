@@ -2,7 +2,9 @@ import Image from 'next/image';
 
 export default function ProjectCard() {
 	return (
-		<div className='w-64 h-48 group cursor-pointer bg-zinc-900 rounded-md border-1 border-zinc-800 hover:bg-zinc-800'>
+		<div
+			id='a'
+			className='w-64 h-48 group cursor-pointer bg-zinc-900 rounded-md border-1 border-zinc-800 hover:bg-zinc-800'>
 			<div className='relative w-full h-3/5'>
 				<Image
 					src='/assets/test.png'
