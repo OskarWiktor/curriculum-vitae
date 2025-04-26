@@ -1,3 +1,5 @@
+"use client";
+
 import {
   AppWindowMac,
   ChevronDown,
@@ -5,9 +7,17 @@ import {
   PhoneCall,
   UserCheck,
 } from "@deemlol/next-icons";
+import {motion, AnimatePresence} from "framer-motion";
 import Link from "next/link";
+import {useState} from "react";
 
 export default function SideNav() {
+  const [showAboutMe, setShowAboutMe] = useState(false);
+
+  const handleAboutMe = () => {
+    setShowAboutMe((prev) => !prev);
+  };
+
   return (
     <nav className="flex flex-col w-68 pr-6 pl-6 h-dvh bg-zinc-900 border-r-1 border-zinc-700">
       <div className="flex w-full pt-6 pb-4 justify-around border-b-1 border-zinc-800">
@@ -37,9 +47,36 @@ export default function SideNav() {
           O mnie
           <ChevronDown
             size={16}
-            className="ml-auto text-[oklch(0.76_0_132)] group-hover:text-[oklch(0.93_0_132)]"
+            className={`ml-auto text-[oklch(0.76_0_132)] group-hover:text-[oklch(0.93_0_132)] transition-transform duration-200 
+              ${showAboutMe ? "rotate-180" : ""}`}
+            onClick={handleAboutMe}
           />
         </Link>
+
+        <AnimatePresence>
+          {showAboutMe && (
+            <motion.div
+              initial={{opacity: 0, height: 0}}
+              animate={{opacity: 1, height: "auto"}}
+              exit={{opacity: 0, height: 0}}
+              transition={{duration: 0.3, ease: "easeInOut"}}
+              className="flex flex-col ml-6 mt-1 space-y-1 text-[oklch(0.76_0_132)]"
+            >
+              <Link href="#intro" className="hover:text-[oklch(0.93_0_132)]">
+                Wstęp
+              </Link>
+              <Link href="#skills" className="hover:text-[oklch(0.93_0_132)]">
+                Umiejętności
+              </Link>
+              <Link
+                href="#experience"
+                className="hover:text-[oklch(0.93_0_132)]"
+              >
+                Doświadczenie
+              </Link>
+            </motion.div>
+          )}
+        </AnimatePresence>
 
         <Link
           href="/projekty"
