@@ -1,9 +1,15 @@
 {
-  "home": {
-    "intro": "Witaj na mojej stronie!",
+  "global": {
     "about": "O mnie",
+    "intro": "Wstęp",
+    "skills": "Umiejętności",
+    "experience": "Doświadczenie",
     "projects": "Projekty",
     "contact": "Kontakt"
+  },
+  "home": {
+    "hello": "Witaj świecie!",
+    "intro": "Mam na imię Oskar i jestem Frontend Developerem. Moja przygoda z programowaniem zaczęła się w 2021 roku. Przez prawie 4 lata pracowałem w VML, najpierw jako Web Master, a potem jako Junior Frontend Developer. Interesuję się sztuką, psychologią i grafiką komputerową — co pomaga mi zachować UI i UX projektów, nad którymi pracuję. Szukam pracy, która przyniesie mi dalsze możliwości rozwoju."
   },
   "project": {
     "description": "Opis projektu"

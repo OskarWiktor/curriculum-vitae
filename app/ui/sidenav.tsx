@@ -3,8 +3,10 @@
 import { AppWindowMac, Github, PhoneCall, UserCheck } from '@deemlol/next-icons';
 import Link from 'next/link';
 import SideNavItem from './sidenavitem';
+import { useTranslations } from '@/hooks/useTranslation';
 
 export default function SideNav() {
+	const { t } = useTranslations();
 	return (
 		<nav className='flex flex-col w-90 pr-4 pl-4 h-dvh bg-zinc-900 border-r-1 border-zinc-700'>
 			<div className='flex w-full pt-6 pb-6 justify-around border-b-1 border-zinc-700'>
@@ -19,7 +21,7 @@ export default function SideNav() {
 					</Link>
 				</div>
 				<div>
-					<p className='text-2xl text-[oklch(0.93_0_132)]'>Oskar Wiktor</p>
+					<p className=' text-[oklch(0.93_0_132)]'>Oskar Wiktor</p>
 					<p className='text-[oklch(0.76_0_132)]'>FrontEnd Dev</p>
 				</div>
 			</div>
@@ -27,7 +29,7 @@ export default function SideNav() {
 			<div className='flex flex-col h-fit pt-4 pb-4'>
 				<SideNavItem
 					href='/'
-					label='O mnie'
+					label={t('global.about')}
 					icon={
 						<UserCheck
 							size={16}
@@ -35,15 +37,15 @@ export default function SideNav() {
 						/>
 					}
 					subItems={[
-						{ href: '/#intro', label: 'Wstęp' },
-						{ href: '/#skills', label: 'Umiejętności' },
-						{ href: '/#experience', label: 'Doświadczenie' },
+						{ href: '/#intro', label: t('global.intro') },
+						{ href: '/#skills', label: t('global.skills') },
+						{ href: '/#experience', label: t('global.experience') },
 					]}
 				/>
 
 				<SideNavItem
 					href='/projects'
-					label='Projekty'
+					label={t('global.projects')}
 					icon={
 						<AppWindowMac
 							size={16}
@@ -58,7 +60,7 @@ export default function SideNav() {
 
 				<SideNavItem
 					href='/contact'
-					label='Kontakt'
+					label={t('global.contact')}
 					icon={
 						<PhoneCall
 							size={16}

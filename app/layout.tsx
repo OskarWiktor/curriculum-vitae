@@ -4,6 +4,7 @@ import './globals.css';
 import SideNav from './ui/sidenav';
 import TopToolbar from './ui/toptoolbar';
 import { LanguageProvider } from '@/hooks/useTranslation';
+import { FontSizeProvider } from '@/hooks/useFontSize';
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
@@ -29,11 +30,13 @@ export default function RootLayout({
 		<html lang='en'>
 			<body className={`${geistSans.variable} ${geistMono.variable} antialiased flex`}>
 				<LanguageProvider>
-					<SideNav />
-					<main className='w-full mt-6 mb-6 ml-12 mr-12'>
-						<TopToolbar />
-						{children}
-					</main>
+					<FontSizeProvider>
+						<SideNav />
+						<main className='w-full mt-6 mb-6 ml-12 mr-12'>
+							<TopToolbar />
+							{children}
+						</main>
+					</FontSizeProvider>
 				</LanguageProvider>
 			</body>
 		</html>
