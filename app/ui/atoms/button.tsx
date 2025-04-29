@@ -3,7 +3,7 @@ import { ReactNode } from 'react';
 interface ButtonProps {
 	children: ReactNode;
 	onClick?: () => void;
-	size?: ButtonSize;
+	size?: string;
 }
 
 export default function Button({ size = 'medium', children, onClick }: ButtonProps) {

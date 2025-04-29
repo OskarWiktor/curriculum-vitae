@@ -13,12 +13,14 @@ export function FontSizeProvider({ children }: { children: ReactNode }) {
 	const [isBigFont, setIsBigFont] = useState(false);
 
 	useEffect(() => {
-		const baseFontSize = isBigFont ? 18 : 14;
+		const baseFontSize = isBigFont ? 20 : 16;
 		document.documentElement.style.setProperty('--base-font-size', `${baseFontSize}px`);
 	});
+
 	const toggleFontSize = () => {
 		setIsBigFont((prev) => !prev);
 	};
+
 	return (
 		<FontSizeContext.Provider value={{ isBigFont, toggleFontSize }}>
 			{children}

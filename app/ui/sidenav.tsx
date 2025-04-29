@@ -8,33 +8,27 @@ import { useTranslations } from '@/hooks/useTranslation';
 export default function SideNav() {
 	const { t } = useTranslations();
 	return (
-		<nav className='flex flex-col w-90 pr-4 pl-4 h-dvh bg-zinc-900 border-r-1 border-zinc-700'>
-			<div className='flex w-full pt-6 pb-6 justify-around border-b-1 border-zinc-700'>
+		<aside className='flex flex-col w-90 pr-4 pl-4 h-dvh border-r-1 border-[var(--border-dark)]'>
+			<div className='flex w-full pt-6 pb-6 justify-around border-b-1 border-[var(--border-dark)]'>
 				<div className='w-14 h-14 '>
 					<Link
 						href='https://github.com/OskarWiktor'
-						className='flex justify-center items-center w-14 h-14 border-1 rounded-md border-amber-400 hover:border-2 '>
-						<Github
-							size={36}
-							color='oklch(82.8% 0.189 84.429)'
-						/>
+						className='flex justify-center items-center w-14 h-14 border-2 rounded-md border-[var(--accent)]'>
+						<Github className='w-9 h-fit color-accent' />
 					</Link>
 				</div>
 				<div>
-					<p className=' text-[oklch(0.93_0_132)]'>Oskar Wiktor</p>
-					<p className='text-[oklch(0.76_0_132)]'>FrontEnd Dev</p>
+					<p className='text-lg '>Oskar Wiktor</p>
+					<p>FrontEnd Dev</p>
 				</div>
 			</div>
 
-			<div className='flex flex-col h-fit pt-4 pb-4'>
+			<nav className='flex flex-col h-fit pt-4 pb-4'>
 				<SideNavItem
 					href='/'
 					label={t('global.about')}
 					icon={
-						<UserCheck
-							size={16}
-							className='mr-3 text-[oklch(0.76_0_132)] group-hover:text-[oklch(0.93_0_132)]'
-						/>
+						<UserCheck className='w-5 h-5 mr-3 text-[var(--text-color-dark)] group-hover:text-[oklch(0.93_0_132)]' />
 					}
 					subItems={[
 						{ href: '/#intro', label: t('global.intro') },
@@ -47,10 +41,7 @@ export default function SideNav() {
 					href='/projects'
 					label={t('global.projects')}
 					icon={
-						<AppWindowMac
-							size={16}
-							className='mr-3 text-[oklch(0.76_0_132)] group-hover:text-[oklch(0.93_0_132)]'
-						/>
+						<AppWindowMac className='w-5 h-5 mr-3 text-[var(--text-color-dark)] group-hover:text-[oklch(0.93_0_132)]' />
 					}
 					subItems={[
 						{ href: '/projects#a', label: 'Projekt A' },
@@ -62,13 +53,10 @@ export default function SideNav() {
 					href='/contact'
 					label={t('global.contact')}
 					icon={
-						<PhoneCall
-							size={16}
-							className='mr-3 text-[oklch(0.76_0_132)] group-hover:text-[oklch(0.93_0_132)]'
-						/>
+						<PhoneCall className='w-5 h-5 mr-3 text-[var(--text-color-dark)] group-hover:text-[oklch(0.93_0_132)]' />
 					}
 				/>
-			</div>
-		</nav>
+			</nav>
+		</aside>
 	);
 }

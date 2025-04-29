@@ -1,53 +1,118 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
-  --background: #e8e8e8;
-  --foreground: #171717;
-  --base-font-size: 14px;
+	--background: oklch(14.1% 0.005 285.823);
+	--background-light: oklch(21% 0.006 285.885);
+	--base-font-size: 16px;
+	--accent: oklch(82.8% 0.189 84.429);
+	--text-color-light: oklch(0.93 0 132);
+	--text-color-dark: oklch(0.76 0 132);
+	--border-light: oklch(37% 0.013 285.805);
+	--border-dark: oklch(27.4% 0.006 286.033);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #141414;
-    --foreground: #ededed;
-  }
+@media (prefers-color-scheme: light) {
+	:root {
+		--background: oklch(87.1% 0.006 286.286);
+		--background-light: oklch(96.7% 0.001 286.375);
+		--accent: oklch(66.6% 0.179 58.318);
+		--text-color-light: oklch(27.4% 0.006 286.033);
+		--text-color-dark: oklch(37% 0.013 285.805);
+		--border-light: oklch(70.5% 0.015 286.067);
+		--border-dark: oklch(87.1% 0.006 286.286);
+	}
+}
+
+.light {
+	--background: oklch(87.1% 0.006 286.286);
+	--background-light: oklch(96.7% 0.001 286.375);
+	--accent: oklch(66.6% 0.179 58.318);
+	--text-color-light: oklch(27.4% 0.006 286.033);
+	--text-color-dark: oklch(37% 0.013 285.805);
+	--border-light: oklch(70.5% 0.015 286.067);
+	--border-dark: oklch(87.1% 0.006 286.286);
 }
 
 html {
-  font-size: var(--base-font-size);
+	font-size: var(--base-font-size);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-geist-sans);
+	background: var(--background);
+	color: var(--foreground);
+	font-family: var(--font-geist-sans);
+}
+
+aside {
+	background: var(--background-light);
 }
 
 a {
-  color: oklch(0.76 0 132);
-  font-size: 1rem
+	color: var(--text-color-dark);
+	font-size: 1rem;
 }
 
 a:hover {
-  color: oklch(0.93 0 132)
+	color: var(--text-color-light);
 }
 
-p, span {
-  font-size: 1rem;
+button {
+	background: var(--background-light);
+	color: var(--text-color-dark);
+}
+
+button:hover {
+	color: var(--text-color-light);
+}
+
+p,
+span,
+h6 {
+	font-size: 1rem;
+	color: var(--text-color-dark);
 }
 
 h1 {
-  font-size: 2rem;
+	font-size: 2rem;
+	color: var(--text-color-light);
 }
 
 h2 {
-  font-size: 1.75rem;
+	font-size: 1.75rem;
+	color: var(--text-color-light);
 }
 
 h3 {
-  font-size: 1.5rem
+	font-size: 1.5rem;
+	color: var(--text-color-light);
 }
 
-h4, h5 {
-  font-size: 1.25rem;
+h4,
+h5 {
+	font-size: 1.25rem;
+	color: var(--text-color-light);
+}
+
+.text-xs {
+	font-size: 0.75rem;
+}
+
+.text-md {
+	font-size: 1.25rem;
+}
+
+.text-lg {
+	font-size: 1.5rem;
+}
+
+.text-light {
+	color: var(--text-color-light);
+}
+
+.text-dark {
+	color: var(--text-color-dark);
+}
+
+.color-accent {
+	color: var(--accent);
 }
