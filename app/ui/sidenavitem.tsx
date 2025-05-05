@@ -41,7 +41,7 @@ export default function SideNavItem({ href, icon, label, subItems }: SideNavItem
 						<motion.div
 							animate={{ rotate: isOpen ? 180 : 0 }}
 							transition={{ duration: animationDuration }}>
-							<ChevronDown className='w-4 h-4' />
+							<ChevronDown className='w-4 h-4 group-hover:text-[var(--text-color-light)]' />
 						</motion.div>
 					</Button>
 				)}
@@ -54,12 +54,11 @@ export default function SideNavItem({ href, icon, label, subItems }: SideNavItem
 						animate={{ opacity: 1, height: 'auto' }}
 						exit={{ opacity: 0, height: 0 }}
 						transition={{ duration: animationDuration, ease: 'easeInOut' }}
-						className='flex flex-col ml-6 mt-1 space-y-1 text-[oklch(0.76_0_132)]'>
+						className='flex flex-col ml-6 mt-1 space-y-1'>
 						{subItems.map((item) => (
 							<Link
 								key={item.href}
-								href={item.href}
-								className='hover:text-[oklch(0.93_0_132)]'>
+								href={item.href}>
 								{item.label}
 							</Link>
 						))}

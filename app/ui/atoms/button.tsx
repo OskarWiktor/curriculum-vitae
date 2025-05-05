@@ -24,10 +24,8 @@ export default function Button({ size = 'medium', children, onClick }: ButtonPro
 	return (
 		<button
 			onClick={onClick}
-			className={`flex justify-center items-center group cursor-pointer w-fit h-fit  bg-zinc-800 rounded-md hover:bg-zinc-700 ${sizeClass}`}>
-			<span className='text-[oklch(0.76_0_132)] group-hover:text-[oklch(0.93_0_132)]'>
-				{children}
-			</span>
+			className={`flex justify-center items-center group cursor-pointer w-fit h-fit bg-[var(--background-light)] rounded-md hover:bg-[var(--hover-light)] ${sizeClass}`}>
+			<span className='group-hover:text-[var(--text-color-light)]'>{children}</span>
 		</button>
 	);
 }

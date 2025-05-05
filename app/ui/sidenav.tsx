@@ -18,7 +18,7 @@ export default function SideNav() {
 					</Link>
 				</div>
 				<div>
-					<p className='text-lg '>Oskar Wiktor</p>
+					<h4>Oskar Wiktor</h4>
 					<p>FrontEnd Dev</p>
 				</div>
 			</div>
@@ -28,7 +28,7 @@ export default function SideNav() {
 					href='/'
 					label={t('global.about')}
 					icon={
-						<UserCheck className='w-5 h-5 mr-3 text-[var(--text-color-dark)] group-hover:text-[oklch(0.93_0_132)]' />
+						<UserCheck className='w-5 h-5 mr-3 text-[var(--text-color-dark)] group-hover:text-[var(--text-color-light)]' />
 					}
 					subItems={[
 						{ href: '/#intro', label: t('global.intro') },
@@ -41,7 +41,7 @@ export default function SideNav() {
 					href='/projects'
 					label={t('global.projects')}
 					icon={
-						<AppWindowMac className='w-5 h-5 mr-3 text-[var(--text-color-dark)] group-hover:text-[oklch(0.93_0_132)]' />
+						<AppWindowMac className='w-5 h-5 mr-3 text-[var(--text-color-dark)] group-hover:text-[var(--text-color-light)]' />
 					}
 					subItems={[
 						{ href: '/projects#a', label: 'Projekt A' },
@@ -53,7 +53,7 @@ export default function SideNav() {
 					href='/contact'
 					label={t('global.contact')}
 					icon={
-						<PhoneCall className='w-5 h-5 mr-3 text-[var(--text-color-dark)] group-hover:text-[oklch(0.93_0_132)]' />
+						<PhoneCall className='w-5 h-5 mr-3 text-[var(--text-color-dark)] group-hover:text-[var(--text-color-light)]' />
 					}
 				/>
 			</nav>

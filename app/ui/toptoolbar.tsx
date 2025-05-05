@@ -17,7 +17,7 @@ export default function TopToolbar() {
 	};
 
 	return (
-		<section className='flex justify-end items-center w-full h-8 gap-3'>
+		<section className='flex justify-end items-center w-full h-fit gap-3'>
 			<Button
 				size='small'
 				onClick={toggleLanguage}>
@@ -25,8 +25,7 @@ export default function TopToolbar() {
 					animate={{
 						color: locale === 'pl' ? 'var(--accent)' : 'var(--text-color-dark)',
 					}}
-					transition={{ duration: 0.2 }}
-					className='leading-0 transition-colors duration-200'>
+					className='leading-0 transition-colors duration-100'>
 					PL
 				</motion.span>
 				<span className='leading-0'> / </span>
@@ -34,23 +33,26 @@ export default function TopToolbar() {
 					animate={{
 						color: locale === 'en' ? 'var(--accent)' : 'var(--text-color-dark)',
 					}}
-					transition={{ duration: 0.2 }}
-					className='leading-0 transition-colors duration-200'>
+					className='leading-0 transition-colors duration-100'>
 					EN
 				</motion.span>
 			</Button>
 			<Button
 				size='small'
 				onClick={toggleFontSize}>
-				{isBigFont ? <TextDown className='w-6 h-6' /> : <TextUp className='w-6 h-6' />}
+				{isBigFont ? (
+					<TextDown className='w-6 h-6 group-hover:text-[var(--text-color-light)]' />
+				) : (
+					<TextUp className='w-6 h-6 group-hover:text-[var(--text-color-light)]' />
+				)}
 			</Button>
 			<Button
 				size='small'
 				onClick={toggleTheme}>
 				{theme === 'dark' ? (
-					<Moon className='w-5 h-5 m-[2px]' />
+					<Moon className='w-5 h-5 m-[2px] group-hover:text-[var(--text-color-light)]' />
 				) : (
-					<Sun className='w-5 h-5 m-[2px]' />
+					<Sun className='w-5 h-5 m-[2px] group-hover:text-[var(--text-color-light)]' />
 				)}
 			</Button>
 		</section>

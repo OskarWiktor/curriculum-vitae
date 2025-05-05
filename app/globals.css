@@ -9,28 +9,31 @@
 	--text-color-dark: oklch(0.76 0 132);
 	--border-light: oklch(37% 0.013 285.805);
 	--border-dark: oklch(27.4% 0.006 286.033);
+	--hover-light: oklch(27.4% 0.006 286.033);
 }
 
 @media (prefers-color-scheme: light) {
 	:root {
-		--background: oklch(87.1% 0.006 286.286);
-		--background-light: oklch(96.7% 0.001 286.375);
+		--background: oklch(96% 0.007 285);
+		--background-light: oklch(92% 0.007 285);
 		--accent: oklch(66.6% 0.179 58.318);
-		--text-color-light: oklch(27.4% 0.006 286.033);
-		--text-color-dark: oklch(37% 0.013 285.805);
-		--border-light: oklch(70.5% 0.015 286.067);
-		--border-dark: oklch(87.1% 0.006 286.286);
+		--text-color-light: oklch(20% 0.01 285);
+		--text-color-dark: oklch(40% 0.015 285);
+		--border-light: oklch(84% 0.005 285);
+		--border-dark: oklch(86% 0.008 285);
+		--hover-light: oklch(88% 0.005 285);
 	}
 }
 
 .light {
-	--background: oklch(87.1% 0.006 286.286);
-	--background-light: oklch(96.7% 0.001 286.375);
+	--background: oklch(96% 0.007 285);
+	--background-light: oklch(92% 0.007 285);
 	--accent: oklch(66.6% 0.179 58.318);
-	--text-color-light: oklch(27.4% 0.006 286.033);
-	--text-color-dark: oklch(37% 0.013 285.805);
-	--border-light: oklch(70.5% 0.015 286.067);
-	--border-dark: oklch(87.1% 0.006 286.286);
+	--text-color-light: oklch(20% 0.01 285);
+	--text-color-dark: oklch(40% 0.015 285);
+	--border-light: oklch(84% 0.005 285);
+	--border-dark: oklch(86% 0.008 285);
+	--hover-light: oklch(88% 0.005 285);
 }
 
 html {
@@ -53,15 +56,6 @@ a {
 }
 
 a:hover {
-	color: var(--text-color-light);
-}
-
-button {
-	background: var(--background-light);
-	color: var(--text-color-dark);
-}
-
-button:hover {
 	color: var(--text-color-light);
 }
 
