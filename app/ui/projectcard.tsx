@@ -5,7 +5,7 @@ export default function ProjectCard() {
 	return (
 		<div
 			id='a'
-			className='w-72 h-54 group cursor-pointer bg-[var(--background-light)] rounded-md border-1 border-[var(--border-dark)] hover:bg-[var(--hover-light)]'>
+			className='w-72 h-54 group cursor-pointer bg-[var(--color-surface)] rounded-md border-1 border-[var(--color-border)] hover:bg-[var(--color-surface-hover)]'>
 			<div className='relative w-full h-2/5'>
 				<Image
 					src='/assets/test.png'

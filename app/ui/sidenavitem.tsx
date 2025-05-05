@@ -41,7 +41,7 @@ export default function SideNavItem({ href, icon, label, subItems }: SideNavItem
 						<motion.div
 							animate={{ rotate: isOpen ? 180 : 0 }}
 							transition={{ duration: animationDuration }}>
-							<ChevronDown className='w-4 h-4 group-hover:text-[var(--text-color-light)]' />
+							<ChevronDown className='w-4 h-4 group-hover:text-[var(--color-text)]' />
 						</motion.div>
 					</Button>
 				)}
