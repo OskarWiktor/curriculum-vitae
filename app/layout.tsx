@@ -29,12 +29,13 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={`${geistSans.variable} ${geistMono.variable} antialiased flex`}>
+			<body
+				className={`${geistSans.variable} ${geistMono.variable} antialiased flex-col md:flex-row flex`}>
 				<ThemeProvider>
 					<LanguageProvider>
 						<FontSizeProvider>
 							<SideNav />
-							<main className='w-full mt-6 mb-6 ml-12 mr-12'>
+							<main className='w-full mt-6 mb-6 pl-4 pr-4 md:pl-12 md:pr-12'>
 								<TopToolbar />
 								{children}
 							</main>

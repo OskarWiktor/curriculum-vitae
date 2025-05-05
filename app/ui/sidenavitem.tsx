@@ -26,10 +26,10 @@ export default function SideNavItem({ href, icon, label, subItems }: SideNavItem
 
 	return (
 		<div className='flex flex-col'>
-			<div className='flex flex-row justify-between items-center pl-3 pr-3'>
+			<div className='flex flex-row justify-between items-center'>
 				<Link
 					href={href || '#'}
-					className='flex items-center rounded-md mt-1 mb-1 pt-1 group'>
+					className='flex items-center rounded-md mt-1 mb-1 group'>
 					{icon}
 					{label}
 				</Link>

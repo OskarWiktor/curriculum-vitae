@@ -19,9 +19,9 @@ export default function SideNav() {
 	const { t } = useTranslations();
 
 	return (
-		<aside className='flex flex-col w-90 pr-4 pl-4 h-dvh border-r-1 border-[var(--color-border)]'>
-			<section className='flex flex-col w-full pt-6 pb-6 items-center border-b-1 border-[var(--color-border)]'>
-				<div className='relative w-full h-58 mb-6'>
+		<aside className='flex flex-col w-full md:w-90 pr-4 pl-4 md:pr-3 md:pl-3 h-fit md:h-dvh border-r-1 border-[var(--color-border)]'>
+			<section className='flex flex-col w-full pt-3 pb-3 md:pt-6 md:pb-6 items-center border-b-1 border-[var(--color-border)]'>
+				<div className='relative w-full h-58 mb-3 md:mb-6'>
 					<Image
 						src='/assets/test.png'
 						fill
@@ -33,9 +33,9 @@ export default function SideNav() {
 					<div className='w-2 h-2 rounded-md bg-[var(--color-accent)] mr-2'></div>
 					<p>{t('global.avaible')}</p>
 				</div>
-				<h4 className='mt-3'>Oskar Wiktor</h4>
+				<h4 className='mt-2 md:mt-3'>Oskar Wiktor</h4>
 				<p>FrontEnd Dev</p>
-				<div className='flex mt-3'>
+				<div className='flex mt-1 md:mt-2'>
 					<Link href='https://github.com/OskarWiktor'>
 						<Button>
 							<Github className='w-5 h-5 group-hover:text-[var(--color-text)]' />
@@ -52,7 +52,7 @@ export default function SideNav() {
 						</Button>
 					</Link>
 				</div>
-				<div className='flex flex-row w-full justify-around mt-3'>
+				<div className='flex flex-row w-full justify-center gap-4 md:gap-0 md:justify-around mt-3'>
 					<Button variant='light'>
 						<Download className='w-4 h-4 text-[var(--color-text)]' />
 						<p className='text-xs'>Download CV</p>
@@ -66,7 +66,7 @@ export default function SideNav() {
 				</div>
 			</section>
 
-			<nav className='flex flex-col h-fit pt-4 pb-4'>
+			<nav className='flex flex-col h-fit pt-2 pb-2 md:pt-4 md:pb-4'>
 				<SideNavItem
 					href='/'
 					label={t('global.about')}
