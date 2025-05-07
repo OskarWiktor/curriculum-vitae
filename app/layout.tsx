@@ -35,7 +35,7 @@ export default function RootLayout({
 					<LanguageProvider>
 						<FontSizeProvider>
 							<SideNav />
-							<main className='w-full mt-6 mb-6 pl-4 pr-4 md:pl-12 md:pr-12'>
+							<main className='w-full mt-6 mb-6 pl-4 pr-4 md:pl-8 md:pr-8 lg:pl-12 lg:pr-12 xl:pl-24 xl:pr-24'>
 								<TopToolbar />
 								{children}
 							</main>

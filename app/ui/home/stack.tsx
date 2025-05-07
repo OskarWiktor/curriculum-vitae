@@ -5,6 +5,7 @@ import {
 	SiAdobelightroom,
 	SiAdobephotoshop,
 	SiAdobexd,
+	SiBitbucket,
 	SiConfluence,
 	SiCss3,
 	SiDrupal,
@@ -46,6 +47,7 @@ const toolStack = [
 	{ label: 'Webflow', icon: <SiWebflow className='w-6 h-6' /> },
 	{ label: 'Firebase', icon: <SiFirebase className='w-6 h-6' /> },
 	{ label: 'Git', icon: <SiGit className='w-6 h-6' /> },
+	{ label: 'Bitbucket', icon: <SiBitbucket className='w-6 h-6' /> },
 	{ label: 'Jira', icon: <SiJira className='w-6 h-6' /> },
 	{ label: 'Confluence', icon: <SiConfluence className='w-6 h-6' /> },
 	{ label: 'Miro', icon: <SiMiro className='w-6 h-6' /> },
@@ -65,39 +67,47 @@ export default function Stack() {
 	return (
 		<section
 			id='skills'
-			className='flex flex-col w-full mt-8'>
+			className='flex flex-col w-full '>
 			<h2 className='mb-3'>Stack:</h2>
-			<span className='uppercase tracking-wide'>Tech</span>
-			<div className='flex gap-2 flex-wrap mb-2'>
-				{techStack.map(({ label, icon }) => (
-					<StackItem
-						key={label}
-						label={label}
-						icon={icon}
-					/>
-				))}
-			</div>
+			<div className='flex flex-col md:flex-row md:gap-2 lg:gap-4'>
+				<div className='flex flex-col gap-1'>
+					<span>Tech</span>
+					<div className='flex gap-2 flex-wrap mb-4'>
+						{techStack.map(({ label, icon }) => (
+							<StackItem
+								key={label}
+								label={label}
+								icon={icon}
+							/>
+						))}
+					</div>
+				</div>
 
-			<h6>Tools</h6>
-			<div className='flex gap-2 flex-wrap mb-2'>
-				{toolStack.map(({ label, icon }) => (
-					<StackItem
-						key={label}
-						label={label}
-						icon={icon}
-					/>
-				))}
-			</div>
+				<div className='flex flex-col gap-1'>
+					<span>Tools</span>
+					<div className='flex gap-2 flex-wrap mb-4'>
+						{toolStack.map(({ label, icon }) => (
+							<StackItem
+								key={label}
+								label={label}
+								icon={icon}
+							/>
+						))}
+					</div>
+				</div>
 
-			<h6>Design</h6>
-			<div className='flex gap-2 flex-wrap'>
-				{designStack.map(({ label, icon }) => (
-					<StackItem
-						key={label}
-						label={label}
-						icon={icon}
-					/>
-				))}
+				<div className='flex flex-col gap-1'>
+					<span>Design</span>
+					<div className='flex gap-2 flex-wrap'>
+						{designStack.map(({ label, icon }) => (
+							<StackItem
+								key={label}
+								label={label}
+								icon={icon}
+							/>
+						))}
+					</div>
+				</div>
 			</div>
 		</section>
 	);

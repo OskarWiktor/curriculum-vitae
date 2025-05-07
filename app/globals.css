@@ -69,6 +69,10 @@ span,
 h6 {
 	font-size: 1rem;
 	color: var(--color-text-muted);
+
+	button:hover & {
+		color: var(--color-text);
+	}
 }
 
 h1 {

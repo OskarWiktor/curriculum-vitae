@@ -19,7 +19,7 @@ export default function SideNav() {
 	const { t } = useTranslations();
 
 	return (
-		<aside className='flex flex-col w-full md:w-90 pr-4 pl-4 md:pr-3 md:pl-3 h-fit md:h-dvh border-r-1 border-[var(--color-border)]'>
+		<aside className='flex flex-col w-full md:w-90 pr-4 pl-4 sm:pr-10 sm:pl-10 md:pr-3 md:pl-3 h-fit md:h-dvh border-r-1 border-[var(--color-border)]'>
 			<section className='flex flex-col w-full pt-3 pb-3 md:pt-6 md:pb-6 items-center border-b-1 border-[var(--color-border)]'>
 				<div className='relative w-full h-58 mb-3 md:mb-6'>
 					<Image
@@ -54,19 +54,19 @@ export default function SideNav() {
 				</div>
 				<div className='flex flex-row w-full justify-center gap-4 md:gap-0 md:justify-around mt-3'>
 					<Button variant='light'>
-						<Download className='w-4 h-4 text-[var(--color-text)]' />
-						<p className='text-xs'>Download CV</p>
+						<Download className='w-4 h-4' />
+						<p>Download CV</p>
 					</Button>
 					<Link href='/contact'>
 						<Button variant='accent'>
 							<PhoneCall className='w-4 h-4 text-background' />
-							<p className='text-xs text-background'>Kontakt</p>
+							<p className='text-background'>Kontakt</p>
 						</Button>
 					</Link>
 				</div>
 			</section>
 
-			<nav className='flex flex-col h-fit pt-2 pb-2 md:pt-4 md:pb-4'>
+			<nav className='flex flex-col min-w-52 md:w-full h-fit pt-2 pb-2 md:pt-4 md:pb-4'>
 				<SideNavItem
 					href='/'
 					label={t('global.about')}
