@@ -1,12 +1,12 @@
 import { ReactNode } from 'react';
 
-interface StackItemProps {
+interface SkillsItemProps {
 	icon: ReactNode;
 	label: string;
 	variant?: 'skills' | 'experience';
 }
 
-export default function StackItem({ label, icon, variant = 'skills' }: StackItemProps) {
+export default function SkillsItem({ label, icon, variant = 'skills' }: SkillsItemProps) {
 	let variantStyle;
 	let variantSpanStyle;
 	let variantTextStyle;

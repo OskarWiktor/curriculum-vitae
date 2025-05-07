@@ -26,7 +26,8 @@ import {
 	SiWebflow,
 	SiWordpress,
 } from 'react-icons/si';
-import StackItem from './stackitem';
+import SkillsItem from './skillsitem';
+import { useTranslations } from '@/hooks/useTranslation';
 
 const techStack = [
 	{ label: 'HTML', icon: <SiHtml5 className='w-6 h-6' /> },
@@ -63,18 +64,20 @@ const designStack = [
 	{ label: 'Adobe Lightroom', icon: <SiAdobelightroom className='w-6 h-6' /> },
 ];
 
-export default function Stack() {
+export default function Skills() {
+	const { t } = useTranslations();
+
 	return (
 		<section
 			id='skills'
 			className='flex flex-col w-full '>
-			<h2 className='mb-3'>Stack:</h2>
+			<h2 className='mb-3'>{t('global.skills')}</h2>
 			<div className='flex flex-col md:flex-row md:gap-2 lg:gap-4'>
 				<div className='flex flex-col gap-1'>
-					<span>Tech</span>
+					<span>{t('home.technologies')}</span>
 					<div className='flex gap-2 flex-wrap mb-4'>
 						{techStack.map(({ label, icon }) => (
-							<StackItem
+							<SkillsItem
 								key={label}
 								label={label}
 								icon={icon}
@@ -84,10 +87,10 @@ export default function Stack() {
 				</div>
 
 				<div className='flex flex-col gap-1'>
-					<span>Tools</span>
+					<span>{t('home.tools')}</span>
 					<div className='flex gap-2 flex-wrap mb-4'>
 						{toolStack.map(({ label, icon }) => (
-							<StackItem
+							<SkillsItem
 								key={label}
 								label={label}
 								icon={icon}
@@ -97,10 +100,10 @@ export default function Stack() {
 				</div>
 
 				<div className='flex flex-col gap-1'>
-					<span>Design</span>
+					<span>{t('home.design')}</span>
 					<div className='flex gap-2 flex-wrap'>
 						{designStack.map(({ label, icon }) => (
-							<StackItem
+							<SkillsItem
 								key={label}
 								label={label}
 								icon={icon}

@@ -4,13 +4,23 @@
 		"intro": "Wstęp",
 		"skills": "Umiejętności",
 		"experience": "Doświadczenie",
+		"education": "Edukacja",
 		"projects": "Projekty",
+		"cv": "Pobierz CV",
 		"contact": "Kontakt",
 		"avaible": "Dostępny do pracy"
 	},
 	"home": {
 		"hello": "Witaj świecie!",
-		"intro": "Mam na imię Oskar i jestem Frontend Developerem. Moja przygoda z programowaniem zaczęła się w 2021 roku. Przez prawie 4 lata pracowałem w VML, najpierw jako Web Master, a potem jako Junior Frontend Developer. Interesuję się sztuką, psychologią i grafiką komputerową — co pomaga mi zachować UI i UX projektów, nad którymi pracuję. Szukam pracy, która przyniesie mi dalsze możliwości rozwoju."
+		"intro": "Mam na imię Oskar i jestem Frontend Developerem. Moja przygoda z programowaniem zaczęła się w 2021 roku. Przez prawie 4 lata pracowałem w VML, najpierw jako Web Master, a potem jako Junior Frontend Developer. Interesuję się sztuką, psychologią i grafiką komputerową — co pomaga mi zachować UI i UX projektów, nad którymi pracuję. Szukam pracy, która przyniesie mi dalsze możliwości rozwoju.",
+		"technologies": "Technologie",
+		"tools": "Narzędzia",
+		"design": "Projektowanie",
+		"education": {
+			"school": "Zespół Państwowych Szkół Plastycznych w Krakowie",
+			"description": "Wykształcenie średnie pełne ze specjalizacją:",
+			"specialization": "Grafika Komputerowa"
+		}
 	},
 	"project": {
 		"description": "Opis projektu"
