@@ -8,7 +8,10 @@
 		"projects": "Projekty",
 		"cv": "Pobierz CV",
 		"contact": "Kontakt",
-		"avaible": "Dostępny do pracy"
+		"avaible": "Dostępny do pracy",
+		"aspirations": "Aspiracje",
+		"competences": "Kompetencje",
+		"language": "Języki"
 	},
 	"home": {
 		"hello": "Witaj świecie!",
@@ -16,10 +19,32 @@
 		"technologies": "Technologie",
 		"tools": "Narzędzia",
 		"design": "Projektowanie",
+		"remote": "Zdalnie",
 		"education": {
 			"school": "Zespół Państwowych Szkół Plastycznych w Krakowie",
 			"description": "Wykształcenie średnie pełne ze specjalizacją:",
 			"specialization": "Grafika Komputerowa"
+		},
+		"aspirations": {
+			"first": "Doskonalenie umiejętności w znanych mi technologiach, zwłaszcza w React oraz Next",
+			"second": "Poszerzenie umiejętności i wiedzy w kierunku FrontEnd Developmentu",
+			"third": "Jak najszybsze osiągnięcie wiedzy i umiejętności na poziomie seniora"
+		},
+		"competences": {
+			"first": "Konstruktywna współpraca z osobami z działów QC, FrontEnd, BackEnd, PM",
+			"second": "Samodzielność w przydzielonych zadaniach",
+			"third": "Wymyślanie rozwiązań odpowiadających na potrzeby klienta",
+			"fourth": "Tworzenie szczegółowych dokumentacji projektowych"
+		},
+		"language": {
+			"polish": {
+				"title": "Język Polski",
+				"description": "Ojczysty"
+			},
+			"english": {
+				"title": "Język Angielski",
+				"description": "Poziom komunikatywny ( B1 - B2 )"
+			}
 		}
 	},
 	"project": {

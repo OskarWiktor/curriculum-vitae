@@ -28,6 +28,7 @@ import {
 } from 'react-icons/si';
 import SkillsItem from './skillsitem';
 import { useTranslations } from '@/hooks/useTranslation';
+import { CheckCircle } from '@deemlol/next-icons';
 
 const techStack = [
 	{ label: 'HTML', icon: <SiHtml5 className='w-6 h-6' /> },
@@ -71,8 +72,15 @@ export default function Skills() {
 		<section
 			id='skills'
 			className='flex flex-col w-full '>
-			<h2 className='mb-3'>{t('global.skills')}</h2>
-			<div className='flex flex-col md:flex-row md:gap-2 lg:gap-4'>
+			<header className='flex items-center'>
+				<CheckCircle
+					size={24}
+					color='var(--color-text)'
+				/>
+				<h3 className='ml-2'>{t('global.skills')}</h3>
+			</header>
+
+			<div className='flex flex-col md:flex-row md:gap-2 lg:gap-4 mt-3'>
 				<div className='flex flex-col gap-1'>
 					<span>{t('home.technologies')}</span>
 					<div className='flex gap-2 flex-wrap mb-4'>

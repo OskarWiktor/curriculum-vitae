@@ -27,6 +27,7 @@ import {
 	SiWordpress,
 } from 'react-icons/si';
 import { useTranslations } from '@/hooks/useTranslation';
+import { Briefcase } from '@deemlol/next-icons';
 
 const vmlFEDStack = [
 	{ label: 'HTML', icon: <SiHtml5 /> },
@@ -74,10 +75,16 @@ export default function Experience() {
 	const { t } = useTranslations();
 
 	return (
-		<section>
-			<h3 className='mb-3'>{t('global.experience')}</h3>
+		<section id='experience'>
+			<header className='flex items-center'>
+				<Briefcase
+					size={24}
+					color='var(--color-text)'
+				/>
+				<h3 className='ml-2'>{t('global.experience')}</h3>
+			</header>
 
-			<div className='flex flex-col bg-[var(--color-surface)] rounded-md p-4 '>
+			<div className='flex flex-col bg-[var(--color-surface)] rounded-md p-4 mt-3'>
 				<div className='flex justify-between'>
 					<div className='flex'>
 						<Image
@@ -87,9 +94,14 @@ export default function Experience() {
 							height={32}
 						/>
 						<h4 className='ml-2'>Junior FrontEnd Dev</h4>
+						<p className='bg-[var(--color-surface-hover)] rounded-md pt-1 pb-1 pl-2 pr-2 ml-2'>
+							{t('home.remote')}
+						</p>
 					</div>
 
-					<p className='bg-[var(--color-surface-hover)] rounded-md p-1'>10.2024 - 04.2025</p>
+					<p className='bg-[var(--color-surface-hover)] rounded-md pt-1 pb-1 pl-2 pr-2'>
+						10.2024 - 04.2025
+					</p>
 				</div>
 				<p className='pt-3 pb-3 border-b-1 border-[var(--color-border)]'>Opis stanowiska</p>
 				<div className='flex flex-wrap gap-2 pt-4'>
@@ -114,9 +126,14 @@ export default function Experience() {
 							height={32}
 						/>
 						<h4 className='ml-2'>Web Master</h4>
+						<p className='bg-[var(--color-surface-hover)] rounded-md pt-1 pb-1 pl-2 pr-2 ml-2'>
+							{t('home.remote')}
+						</p>
 					</div>
 
-					<p className='bg-[var(--color-surface-hover)] rounded-md p-1'>08.2021 - 10.2024</p>
+					<p className='bg-[var(--color-surface-hover)] rounded-md pt-1 pb-1 pl-2 pr-2'>
+						08.2021 - 10.2024
+					</p>
 				</div>
 				<p className='pt-3 pb-3 border-b-1 border-[var(--color-border)]'>Opis stanowiska</p>
 				<div className='flex flex-wrap gap-2 pt-4'>

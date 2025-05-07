@@ -8,7 +8,10 @@
 		"projects": "Projects",
 		"cv": "Download CV",
 		"contact": "Contact",
-		"avaible": "Available for work"
+		"avaible": "Available for work",
+		"aspirations": "Aspirations",
+		"competences": "Competences",
+		"language": "Languages"
 	},
 	"home": {
 		"hello": "Hello world!",
@@ -16,10 +19,32 @@
 		"technologies": "Technologies",
 		"tools": "Tools",
 		"design": "Design",
+		"remote": "Remote",
 		"education": {
 			"school": "The Complex of State Art Schools in Krakow",
 			"description": "Complete secondary education with specialization:",
 			"specialization": "Graphics Design"
+		},
+		"aspirations": {
+			"first": "Improving my skills in technologies I know, especially React and Next",
+			"second": "Expanding skills and knowledge towards FrontEnd Development",
+			"third": "Achieving senior-level knowledge and skills as quickly as possible"
+		},
+		"competences": {
+			"first": "Constructive cooperation with people from the QC, FrontEnd, BackEnd, PM departments",
+			"second": "Independence in assigned tasks",
+			"third": "Creating solutions that meet customer needs",
+			"fourth": "Creating detailed project documentation"
+		},
+		"language": {
+			"polish": {
+				"title": "Polish",
+				"description": "Native"
+			},
+			"english": {
+				"title": "English",
+				"description": "Communicative level ( B1 - B2 )"
+			}
 		}
 	},
 	"project": {

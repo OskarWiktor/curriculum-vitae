@@ -76,7 +76,11 @@ export default function SideNav() {
 					subItems={[
 						{ href: '/#intro', label: t('global.intro') },
 						{ href: '/#skills', label: t('global.skills') },
+						{ href: '/#aspirations', label: t('global.aspirations') },
 						{ href: '/#experience', label: t('global.experience') },
+						{ href: '/#competences', label: t('global.competences') },
+						{ href: '/#education', label: t('global.education') },
+						{ href: '/#language', label: t('global.language') },
 					]}
 				/>
 
