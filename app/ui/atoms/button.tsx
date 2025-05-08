@@ -5,6 +5,7 @@ interface ButtonProps {
 	onClick?: () => void;
 	size?: 'small' | 'medium' | 'big';
 	variant?: 'default' | 'light' | 'accent';
+	type?: 'submit' | 'reset' | 'button' | undefined;
 }
 
 export default function Button({
@@ -12,6 +13,7 @@ export default function Button({
 	variant = 'default',
 	children,
 	onClick,
+	type,
 }: ButtonProps) {
 	let sizeClass = '';
 
@@ -49,6 +51,7 @@ export default function Button({
 	return (
 		<button
 			onClick={onClick}
+			type={type}
 			className={`flex justify-center items-center group cursor-pointer w-fit h-fit rounded-md ${variantClass} ${sizeClass}`}>
 			<span className={`flex items-center gap-x-2 w-full h-full ${variantChildrenClass}`}>
 				{children}

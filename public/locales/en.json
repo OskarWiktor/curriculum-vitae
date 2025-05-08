@@ -49,5 +49,14 @@
 	},
 	"project": {
 		"description": "Project description"
+	},
+	"contact": {
+		"name": "Name",
+		"email": "Email",
+		"message": "Message",
+		"submit": "Submit",
+		"error": "The message could not be sent - check if the fields have been filled in correctly",
+		"success": "The message has been sent",
+		"address": "32-070 Czernichów (near Krakow)"
 	}
 }

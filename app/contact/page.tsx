@@ -1,7 +1,16 @@
+import ContactAddress from '../ui/contact/contactaddress';
+import ContactForm from '../ui/contact/contactform';
+
 export default function Page() {
-    return (
-      <main>
-        <div>Kontakt Test</div>
-      </main>
-    );
-  }
+	return (
+		<div className='flex flex-col lg:flex-row w-full mt-8 md:mt-16 gap-8'>
+			<div className='flex flex-col w-full lg:w-1/2'>
+				<ContactAddress />
+			</div>
+
+			<div className='w-full lg:w-1/2 '>
+				<ContactForm />
+			</div>
+		</div>
+	);
+}

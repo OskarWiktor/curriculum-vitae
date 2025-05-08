@@ -49,5 +49,14 @@
 	},
 	"project": {
 		"description": "Opis projektu"
+	},
+	"contact": {
+		"name": "Nazwa",
+		"email": "Email",
+		"message": "Wiadomość",
+		"submit": "Wyślij",
+		"error": "Nie można wysłać wiadomości - sprawdź czy pola zostały prawidłowo uzupełnione",
+		"success": "Wiadomość została wysłana",
+		"address": "32-070 Czernichów (okolice Krakowa)"
 	}
 }
