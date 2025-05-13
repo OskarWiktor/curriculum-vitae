@@ -14,13 +14,16 @@ export default function ProjectsPage() {
 	}[];
 
 	return (
-		<div className='flex flex-wrap mt-8 gap-4'>
-			{projectList.map((project) => (
-				<ProjectCard
-					key={project.slug}
-					{...project}
-				/>
-			))}
-		</div>
+		<>
+			<h1 className='mt-8 md:mt-16'>Projects worth mention</h1>
+			<div className='flex flex-wrap mt-5 md:mt-10 gap-4'>
+				{projectList.map((project) => (
+					<ProjectCard
+						key={project.slug}
+						{...project}
+					/>
+				))}
+			</div>
+		</>
 	);
 }

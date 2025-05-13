@@ -19,7 +19,7 @@ export default function SideNav() {
 	const { t } = useTranslations();
 
 	return (
-		<aside className='flex flex-col w-full md:fixed md:w-58 lg:w-64 md:m-2 rounded-md pr-4 pl-4 sm:pr-10 sm:pl-10 md:pr-3 md:pl-3 h-fit'>
+		<aside className='flex flex-col w-full md:fixed md:w-64 md:m-2 rounded-md pr-4 pl-4 sm:pr-10 sm:pl-10 md:pr-3 md:pl-3 h-fit'>
 			<section className='flex flex-col w-full pt-3 pb-3 md:pt-6 md:pb-6 items-center border-b-1 border-[var(--color-border)]'>
 				<div className='relative w-full h-58 mb-3 md:mb-6'>
 					<Image
@@ -66,7 +66,7 @@ export default function SideNav() {
 				</div>
 			</section>
 
-			<nav className='flex flex-col min-w-52 md:w-full h-fit pt-2 pb-2 md:pt-4 md:pb-4'>
+			<nav className='flex flex-col min-w-50 md:w-full h-fit pt-2 pb-2 md:pt-4 md:pb-4'>
 				<SideNavItem
 					href='/'
 					label={t('global.about')}
@@ -90,10 +90,6 @@ export default function SideNav() {
 					icon={
 						<AppWindowMac className='w-5 h-5 mr-3 text-[var(--color-text-muted)] group-hover:text-[var(--color-text)]' />
 					}
-					subItems={[
-						{ href: '/projects#a', label: 'Projekt A' },
-						{ href: '/projects#b', label: 'Projekt B' },
-					]}
 				/>
 			</nav>
 		</aside>

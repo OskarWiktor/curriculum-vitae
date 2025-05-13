@@ -15,8 +15,8 @@ export default function ProjectCard({ slug, title, short, image, stack }: Projec
 	return (
 		<Link
 			href={`/projects/${slug}`}
-			className='w-80 h-64 group cursor-pointer bg-[var(--color-surface)] rounded-md border-b-1 border-b-[var(--color-text)] hover:bg-[var(--color-surface-hover)]'>
-			<div className='relative w-full h-2/5'>
+			className='w-86 h-72 group cursor-pointer bg-[var(--color-surface)] rounded-md border-b-1 border-b-[var(--color-text)] hover:bg-[var(--color-surface-hover)]'>
+			<div className='relative w-full h-3/7'>
 				<Image
 					src={image}
 					fill

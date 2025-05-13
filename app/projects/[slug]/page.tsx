@@ -9,6 +9,7 @@ export default function ProjectDetailPage() {
 	const { t } = useTranslations();
 
 	const project = t(`projects.${slug}`) as {
+		title: string;
 		image: string;
 		description: string;
 		challenges: string;
@@ -22,16 +23,14 @@ export default function ProjectDetailPage() {
 			<div className='relative w-full h-92'>
 				<Image
 					fill
-					className='object-cover object-top'
+					className='object-cover object-top rounded-md'
 					src={project.image}
 					alt={slug}
 				/>
 			</div>
-			<h1>{slug}</h1>
-			<a href={project.link}>
-				<h6 className='mb-12'> {t('projects.website')}</h6>
-			</a>
-			<p>
+			<h1>{project.title}</h1>
+			<a href={project.link}>{project.link}</a>
+			<p className='mt-10'>
 				<strong>{t('projects.description')}</strong> {project.description}
 			</p>
 			<p>

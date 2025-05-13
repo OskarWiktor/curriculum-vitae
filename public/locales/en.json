@@ -106,6 +106,7 @@
 			}
 		],
 		"curriculum-vitae": {
+			"title": "CV",
 			"image": "/assets/cv.png",
 			"description": "A CV website created for the purpose of the recruitment process. Built with Next.js, it provided an opportunity for me to deepen my understanding of the framework and streamline the development workflow.",
 			"challenges": "The biggest challenge was implementing the language switcher, light/dark theme, and font resizing — all of which I developed for the first time using Next.js.",
@@ -114,6 +115,7 @@
 			"link": "https://cv.oskarwiktor.dev"
 		},
 		"ar-project": {
+			"title": "AR Project",
 			"image": "/assets/ar-project.png",
 			"description": "An AR project developed at the VML agency using React, TypeScript, and 8th Wall. As the application is not yet publicly available, I am omitting details regarding the client and specific functionalities. The app will be accessible by scanning a QR code placed on product packaging. Material UI was used to accelerate development of components and their variants.",
 			"challenges": "The biggest challenge was working on an augmented reality application for the first time using 8th Wall. The project broadened my perspective and sparked my interest in developing within this area.",
@@ -122,6 +124,7 @@
 			"link": ""
 		},
 		"meridol-accessibility": {
+			"title": "Meridol Accessibility",
 			"image": "/assets/meridol-accessibility.png",
 			"description": "A project carried out for Colgate-Palmolive in cooperation with the VML agency, based on AEM and developed using JavaScript, jQuery, and SCSS. The goal was to adapt meridol.de to WCAG accessibility standards.",
 			"challenges": "The main challenge was the lack of direct access to the HTML structure of AEM components, which required adding ARIA attributes using a team-defined pattern implemented in jQuery. Additionally, all features had to be compatible with screen readers such as NVDA.",
@@ -130,6 +133,7 @@
 			"link": "https://www.meridol.de/"
 		},
 		"elmex-accessibility": {
+			"title": "Elmex Accessibility",
 			"image": "/assets/elmex-accessibility.png",
 			"description": "A project carried out for Colgate-Palmolive in cooperation with the VML agency, based on AEM and developed using JavaScript, jQuery, and SCSS. The aim was to ensure elmex.de meets WCAG accessibility standards and to implement new components compliant with those guidelines.",
 			"challenges": "The main challenge was adapting the UI and new components to accessibility requirements, especially with limitations caused by AEM. This required great attention to detail and testing with screen readers.",
@@ -138,6 +142,7 @@
 			"link": "https://www.elmex.de/"
 		},
 		"sanex-accessibility": {
+			"title": "Sanex Accessibility",
 			"image": "/assets/sanex-accessibility.png",
 			"description": "A project developed for Colgate-Palmolive in collaboration with the VML agency, based on AEM and using JavaScript, jQuery, and SCSS. The goal was to align the sanex.co.uk website with WCAG accessibility standards.",
 			"challenges": "The biggest challenge was implementing the contrast tool and adjusting various components — such as carousels and product filters — to meet accessibility requirements.",
@@ -146,6 +151,7 @@
 			"link": "https://www.sanex.co.uk/"
 		},
 		"pilka-nozna-pl": {
+			"title": "PilkaNożna.pl",
 			"image": "/assets/pilka-nozna-pl.png",
 			"description": "A side project I was invited to by a front-end developer from VML. A football blog built in WordPress using PHP and the Blade templating engine.",
 			"challenges": "The main challenge was ensuring a consistent structure for components developed by multiple devs, and arranging them according to the provided design.",
@@ -154,6 +160,7 @@
 			"link": "https://pilkanozna.pl/"
 		},
 		"trilllizo": {
+			"title": "Trillizo",
 			"image": "/assets/trilllizo.png",
 			"description": "An online clothing store developed for a client using WordPress and Elementor Pro. The site includes two language versions: Polish (.pl) and English (.com).",
 			"challenges": "The biggest challenge was managing the project end-to-end — from WordPress installation and UI design to payment system integration, InPost shipping setup, and newsletter configuration.",
