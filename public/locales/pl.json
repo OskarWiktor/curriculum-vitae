@@ -47,8 +47,120 @@
 			}
 		}
 	},
-	"project": {
-		"description": "Opis projektu"
+	"projects": {
+		"website": "Zobacz stronę projektu",
+		"description": "Opis:",
+		"challenges": "Wyzwania:",
+		"solutions": "Rozwiązania:",
+		"tasks": "Zadania:",
+
+		"list": [
+			{
+				"slug": "curriculum-vitae",
+				"title": "CV",
+				"short": "Responsywna aplikacja CV z dynamicznym routingiem i trybem ciemnym/jasnym.",
+				"image": "/assets/cv.png",
+				"stack": ["Next", "TypeScript", "Tailwind"]
+			},
+			{
+				"slug": "ar-project",
+				"title": "AR Project",
+				"short": "Aplikacja AR oparta na 8th Wall tworzona z wykorzystaniem React i Material UI.",
+				"image": "/assets/ar-project.png",
+				"stack": ["React", "TypeScript", "8th Wall", "Material UI"]
+			},
+			{
+				"slug": "meridol-accessibility",
+				"title": "Meridol Accessibility",
+				"short": "Dostosowanie strony do standardów WCAG z wykorzystaniem AEM i jQuery.",
+				"image": "/assets/meridol-accessibility.png",
+				"stack": ["Adobe Experience Manager", "JavaScript", "jQuery", "SCSS", "WCAG"]
+			},
+			{
+				"slug": "elmex-accessibility",
+				"title": "Elmex Accessibility",
+				"short": "Nowe komponenty i poprawki UI zgodne z WCAG w środowisku AEM.",
+				"image": "/assets/elmex-accessibility.png",
+				"stack": ["Adobe Experience Manager", "JavaScript", "jQuery", "SCSS", "WCAG"]
+			},
+			{
+				"slug": "sanex-accessibility",
+				"title": "Sanex Accessibility",
+				"short": "Implementacja contrast toola i dostępności komponentów w AEM.",
+				"image": "/assets/sanex-accessibility.png",
+				"stack": ["Adobe Experience Manager", "JavaScript", "jQuery", "SCSS", "WCAG"]
+			},
+			{
+				"slug": "pilka-nozna-pl",
+				"title": "PilkaNożna.pl",
+				"short": "Blog piłkarski oparty na WordPressie i Blade.",
+				"image": "/assets/pilka-nozna-pl.png",
+				"stack": ["Wordpress", "Tailwind"]
+			},
+			{
+				"slug": "trilllizo",
+				"title": "Trillizo",
+				"short": "Sklep z odzieżą dla dzieci zrealizowany w WordPress z Elementor Pro.",
+				"image": "/assets/trilllizo.png",
+				"stack": ["Wordpress", "Elementor Pro"]
+			}
+		],
+		"curriculum-vitae": {
+			"image": "/assets/cv.png",
+			"description": "Strona CV stworzona na potrzeby procesu rekrutacyjnego. Zbudowana w Next.js, stanowiła dla mnie okazję do pogłębienia wiedzy o tym frameworku oraz usprawnienia procesu tworzenia aplikacji.",
+			"challenges": "Największym wyzwaniem było zaimplementowanie przełącznika języka, trybu jasnego i ciemnego oraz funkcji zmiany rozmiaru czcionki — wszystkie te elementy realizowałem po raz pierwszy przy użyciu Next.",
+			"solutions": "Samodzielnie zaprojektowałem cały interfejs użytkownika, inspirując się stronami Vercel oraz Notion. Zależało mi na spójności i minimaliźmie. Do projektu dodałem wersję angielską, aby zwiększyć jego dostępność dla rekruterów spoza Polski. Postawiłem na strukturalny, czysty kod — powtarzające się elementy zostały wydzielone jako komponenty. Wykorzystałem Next.js także ze względu na potrzebę dynamicznego routingu (m.in. z użyciem slugów) i możliwość łatwego zarządzania wspólnymi komponentami, takimi jak SideNav czy Toolbar.",
+			"tasks": "Projektowanie i implementacja interfejsu, routing dynamiczny, lokalizacja w dwóch językach, stylowanie z użyciem zmiennych CSS i Tailwinda, projekt responsywny, komponenty wspólne, optymalizacja dostępności, integracja z react-icons i next-icons",
+			"link": "https://cv.oskarwiktor.dev"
+		},
+		"ar-project": {
+			"image": "/assets/ar-project.png",
+			"description": "Projekt AR stworzony w agencji VML z wykorzystaniem Reacta, TypeScriptu i 8th Wall. Projekt nie jest jeszcze dostępny publicznie, stąd nie umieszczam dokładnych informacji o kliencie oraz funkcjonalnościach. Aplikacja będzie dostępna po zeskanowaniu kodu QR umieszczonego na produktach. W projekcie wykorzystano Material UI w celu przyspieszenia pracy nad komponentami i ich wariantami.",
+			"challenges": "Największym wyzwaniem było pierwsze zetknięcie się z tworzeniem aplikacji rzeczywistości rozszerzonej z użyciem 8th Wall. Projekt otworzył mi nowe perspektywy rozwoju w tym obszarze.",
+			"solutions": "Współtworzyłem aplikację z doświadczonym seniorem, od którego otrzymywałem wiele wskazówek na temat struktury kodu i dobrych praktyk, które następnie implementowałem. Pracowałem nad komponentami językowymi (niemiecki i francuski), quizem oraz nad interaktywnymi modułami, których funkcji nie mogę jeszcze ujawnić.",
+			"tasks": "Tworzenie komponentów UI, rozwój quizu, lokalizacja językowa (DE/FR), wdrożenie AR przy użyciu 8th Wall, współpraca z seniorem, praca z Material UI",
+			"link": ""
+		},
+		"meridol-accessibility": {
+			"image": "/assets/meridol-accessibility.png",
+			"description": "Projekt realizowany dla Colgate-Palmolive we współpracy z agencją VML, oparty na AEM z wykorzystaniem JavaScriptu, jQuery i SCSS. Celem było dostosowanie strony meridol.de do standardów dostępności WCAG.",
+			"challenges": "Głównym wyzwaniem był brak bezpośredniego dostępu do HTML komponentów AEM, przez co konieczne było dodawanie atrybutów ARIA przy pomocy zdefiniowanego przez zespół schematu przy użyciu jQuery. Dodatkowo wszystkie funkcje musiały być zgodne z narzędziami typu screen reader (np. NVDA).",
+			"solutions": "Wprowadziłem rozwiązania takie jak kontrast tool, obsługę nawigacji za pomocą klawiatury (m.in. tabbing na stronach produktowych) oraz poprawki UI. Współpracowałem z dwoma deweloperami, w tym jednym specjalizującym się w AEM. Wszystkie zmiany były wdrażane z myślą o przyszłym reużyciu na innych rynkach.",
+			"tasks": "Wdrożenie standardów WCAG, implementacja kontrast tool, praca z jQuery i AEM, dostępność przez klawiaturę i czytniki ekranów, optymalizacja UI dla użytkowników z niepełnosprawnościami",
+			"link": "https://www.meridol.de/"
+		},
+		"elmex-accessibility": {
+			"image": "/assets/elmex-accessibility.png",
+			"description": "Projekt realizowany dla Colgate-Palmolive we współpracy z agencją VML, oparty na AEM z wykorzystaniem JavaScriptu, jQuery i SCSS. Celem było dostosowanie strony elmex.de do standardów dostępności WCAG oraz wdrażanie nowych komponentów zgodnych z tymi wytycznymi.",
+			"challenges": "Największym wyzwaniem było dostosowanie UI i nowych komponentów do zasad dostępności, zwłaszcza przy ograniczeniach wynikających z użycia AEM. Wymagało to dużej dbałości o szczegóły oraz testów z wykorzystaniem screen readerów.",
+			"solutions": "Zajmowałem się wdrażaniem komponentów zgodnych z WCAG, poprawą kontrastów, dostosowaniem kolorystyki oraz naprawą błędów związanych z UI. Zmiany wprowadzane były we współpracy z zespołem deweloperów, z myślą o dalszym rozwoju strony i skalowalności komponentów.",
+			"tasks": "Implementacja dostępnych komponentów, optymalizacja UI zgodnie z WCAG, praca z jQuery i AEM, naprawa błędów wizualnych, praca z zespołem frontendowym",
+			"link": "https://www.elmex.de/"
+		},
+		"sanex-accessibility": {
+			"image": "/assets/sanex-accessibility.png",
+			"description": "Projekt realizowany dla Colgate-Palmolive we współpracy z agencją VML, oparty na AEM i rozwijany przy użyciu JavaScriptu, jQuery i SCSS. Celem było dostosowanie strony sanex.co.uk do standardów dostępności WCAG.",
+			"challenges": "Największym wyzwaniem było wdrożenie narzędzia kontrastu i dostosowanie różnych komponentów, takich jak karuzele i filtry produktowe, do wymogów dostępności.",
+			"solutions": "Zaimplementowałem kontrast tool i wprowadziłem zmiany UI na wszystkich podstronach. Poprawiłem działanie filtrów na stronie produktowej oraz dostosowałem komponenty interaktywne, w tym karuzele, zgodnie z zasadami WCAG.",
+			"tasks": "Implementacja contrast tool, optymalizacja karuzeli, poprawa filtrów, zmiany UI zgodne z WCAG, praca z jQuery i AEM",
+			"link": "https://www.sanex.co.uk/"
+		},
+		"pilka-nozna-pl": {
+			"image": "/assets/pilka-nozna-pl.png",
+			"description": "Projekt realizowany poza godzinami pracy, do którego zostałem zaproszony przez jednego z front-end developerów z VML. Blog piłkarski stworzony w WordPressie z użyciem PHP i silnika szablonów Blade.",
+			"challenges": "Największym wyzwaniem było zapewnienie spójności strukturalnej komponentów budowanych przez kilku programistów oraz ich poprawne rozmieszczenie zgodnie z designem.",
+			"solutions": "Odpowiadałem za testowanie komponentów, przygotowanie dokumentacji dla klienta, budowanie szablonów i wdrażanie logiki WordPressa (np. nawigacji). Proponowałem rozwiązania pozwalające na ponowne wykorzystanie komponentów, aby klient mógł nimi wygodnie zarządzać. Zgłaszałem też błędy wizualne i funkcjonalne.",
+			"tasks": "Testowanie komponentów, tworzenie dokumentacji, praca z WordPressem i Blade, wdrażanie szablonów, zgłaszanie błędów i propozycji optymalizacji, fakturowanie jako freelancer",
+			"link": "https://pilkanozna.pl/"
+		},
+		"trilllizo": {
+			"image": "/assets/trilllizo.png",
+			"description": "Sklep internetowy z odzieżą, zrealizowany na zlecenie klientki w WordPressie z użyciem Elementora Pro. Projekt obejmował przygotowanie dwóch wersji językowych: polskiej (.pl) i angielskiej (.com).",
+			"challenges": "Największym wyzwaniem było kompleksowe podejście do całego procesu — od instalacji WordPressa, przez projektowanie interfejsu, aż po wdrożenie płatności, integrację z InPostem i systemem newsletterowym.",
+			"solutions": "Odpowiadałem za całość realizacji: konfigurację serwera, projekt UI zgodny z oczekiwaniami klientki, implementację funkcji e-commerce, optymalizację SEO i grafik oraz stworzenie dokumentacji i instrukcji obsługi. Obecnie trwają rozmowy nad rozbudową serwisu o treści blogowe (content marketing) i nowe funkcje. Projekt został wykonany w ramach mojej działalności gospodarczej.",
+			"tasks": "Instalacja i konfiguracja WordPressa, projekt i implementacja UI, integracje (płatności, InPost, newsletter), optymalizacja SEO i zdjęć, lokalizacja, dokumentacja, opieka powdrożeniowa",
+			"link": "https://trilllizo.com"
+		}
 	},
 	"contact": {
 		"name": "Nazwa",

@@ -6,7 +6,7 @@ export default function Aspirations() {
 
 	return (
 		<section id='aspirations'>
-			<header className='flex items-center'>
+			<header className='flex items-center w-fit'>
 				<Award
 					size={24}
 					color='var(--color-text)'
@@ -15,7 +15,7 @@ export default function Aspirations() {
 			</header>
 
 			<div>
-				<ul className='list-disc pl-8 mt-3'>
+				<ul className='list-disc marker:text-[var(--color-accent)] pl-8 mt-3'>
 					<li>{t('home.aspirations.first')}</li>
 					<li>{t('home.aspirations.second')}</li>
 					<li>{t('home.aspirations.third')}</li>

@@ -1,74 +1,49 @@
 import Image from 'next/image';
-import StackItem from './skillsitem';
-import {
-	SiAdobe,
-	SiAdobeillustrator,
-	SiAdobeindesign,
-	SiAdobephotoshop,
-	SiAdobexd,
-	SiBitbucket,
-	SiConfluence,
-	SiCss3,
-	SiDrupal,
-	SiFigma,
-	SiFirebase,
-	SiGit,
-	SiHtml5,
-	SiJavascript,
-	SiJira,
-	SiJquery,
-	SiNextdotjs,
-	SiReact,
-	SiSass,
-	SiTailwindcss,
-	SiTrello,
-	SiTypescript,
-	SiWebflow,
-	SiWordpress,
-} from 'react-icons/si';
+import SkillsItem from './skillsitem';
 import { useTranslations } from '@/hooks/useTranslation';
 import { Briefcase } from '@deemlol/next-icons';
+import { skillList, StackItem } from '../../../lib/skillslist';
 
-const vmlFEDStack = [
-	{ label: 'HTML', icon: <SiHtml5 /> },
-	{ label: 'CSS', icon: <SiCss3 /> },
-	{ label: 'SCSS', icon: <SiSass /> },
-	{ label: 'Tailwind', icon: <SiTailwindcss /> },
-	{ label: 'JavaScript', icon: <SiJavascript /> },
-	{ label: 'JQuery', icon: <SiJquery /> },
-	{ label: 'TypeScript', icon: <SiTypescript /> },
-	{ label: 'React', icon: <SiReact /> },
-	{ label: 'Next', icon: <SiNextdotjs /> },
-	{ label: 'Adobe Experience Manager', icon: <SiAdobe /> },
-	{ label: 'Git', icon: <SiGit /> },
-	{ label: 'Bitbucket', icon: <SiBitbucket /> },
-	{ label: 'Jira', icon: <SiJira /> },
-	{ label: 'Confluence', icon: <SiConfluence /> },
-	{ label: 'Figma', icon: <SiFigma /> },
-	{ label: 'Adobe Photoshop', icon: <SiAdobephotoshop /> },
+const vmlFEDLabels = [
+	'HTML',
+	'CSS',
+	'SCSS',
+	'Tailwind',
+	'JavaScript',
+	'JQuery',
+	'TypeScript',
+	'React',
+	'Next',
+	'Adobe Experience Manager',
+	'Git',
+	'Bitbucket',
+	'Jira',
+	'Confluence',
+	'Figma',
+	'Adobe Photoshop',
 ];
 
-const vmlWMStack = [
-	{ label: 'HTML', icon: <SiHtml5 /> },
-	{ label: 'CSS', icon: <SiCss3 /> },
-	{ label: 'SCSS', icon: <SiSass /> },
-	{ label: 'JavaScript', icon: <SiJavascript /> },
-	{ label: 'TypeScript', icon: <SiTypescript /> },
-	{ label: 'React', icon: <SiReact /> },
-	{ label: 'Adobe Experience Manager', icon: <SiAdobe /> },
-	{ label: 'Drupal', icon: <SiDrupal /> },
-	{ label: 'Wordpress', icon: <SiWordpress /> },
-	{ label: 'Webflow', icon: <SiWebflow /> },
-	{ label: 'Firebase', icon: <SiFirebase /> },
-	{ label: 'Git', icon: <SiGit /> },
-	{ label: 'Jira', icon: <SiJira /> },
-	{ label: 'Confluence', icon: <SiConfluence /> },
-	{ label: 'Trello', icon: <SiTrello /> },
-	{ label: 'Figma', icon: <SiFigma /> },
-	{ label: 'Adobe Photoshop', icon: <SiAdobephotoshop /> },
-	{ label: 'Adobe Illustrator', icon: <SiAdobeillustrator /> },
-	{ label: 'Adobe Xd', icon: <SiAdobexd /> },
-	{ label: 'Adobe InDesign', icon: <SiAdobeindesign /> },
+const vmlWMLabels = [
+	'HTML',
+	'CSS',
+	'SCSS',
+	'JavaScript',
+	'TypeScript',
+	'React',
+	'Adobe Experience Manager',
+	'Drupal',
+	'Wordpress',
+	'Webflow',
+	'Firebase',
+	'Git',
+	'Jira',
+	'Confluence',
+	'Trello',
+	'Figma',
+	'Adobe Photoshop',
+	'Adobe Illustrator',
+	'Adobe Xd',
+	'Adobe InDesign',
 ];
 
 export default function Experience() {
@@ -84,7 +59,7 @@ export default function Experience() {
 				<h3 className='ml-2'>{t('global.experience')}</h3>
 			</header>
 
-			<div className='flex flex-col bg-[var(--color-surface)] rounded-md p-4 mt-3'>
+			<div className='flex flex-col bg-[var(--color-surface)] rounded-md p-4 mt-3 border-b-1 border-b-[var(--color-accent)]'>
 				<div className='flex justify-between'>
 					<div className='flex'>
 						<Image
@@ -105,18 +80,21 @@ export default function Experience() {
 				</div>
 				<p className='pt-3 pb-3 border-b-1 border-[var(--color-border)]'>Opis stanowiska</p>
 				<div className='flex flex-wrap gap-2 pt-4'>
-					{vmlFEDStack.map(({ label, icon }) => (
-						<StackItem
-							key={label}
-							label={label}
-							icon={icon}
-							variant='experience'
-						/>
-					))}
+					{vmlFEDLabels
+						.map((label) => skillList.find((item) => item.label === label))
+						.filter((item): item is StackItem => item !== undefined)
+						.map(({ label, icon }) => (
+							<SkillsItem
+								key={label}
+								label={label}
+								icon={icon}
+								variant='small'
+							/>
+						))}
 				</div>
 			</div>
 
-			<div className='flex flex-col bg-[var(--color-surface)] rounded-md p-4 mt-4'>
+			<div className='flex flex-col bg-[var(--color-surface)] rounded-md p-4 mt-4 border-b-1 border-b-[var(--color-accent)]'>
 				<div className='flex justify-between'>
 					<div className='flex'>
 						<Image
@@ -137,14 +115,17 @@ export default function Experience() {
 				</div>
 				<p className='pt-3 pb-3 border-b-1 border-[var(--color-border)]'>Opis stanowiska</p>
 				<div className='flex flex-wrap gap-2 pt-4'>
-					{vmlWMStack.map(({ label, icon }) => (
-						<StackItem
-							key={label}
-							label={label}
-							icon={icon}
-							variant='experience'
-						/>
-					))}
+					{vmlWMLabels
+						.map((label) => skillList.find((item) => item.label === label))
+						.filter((item): item is StackItem => item !== undefined)
+						.map(({ label, icon }) => (
+							<SkillsItem
+								key={label}
+								label={label}
+								icon={icon}
+								variant='small'
+							/>
+						))}
 				</div>
 			</div>
 		</section>

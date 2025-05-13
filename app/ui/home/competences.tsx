@@ -15,7 +15,7 @@ export default function Competences() {
 			</header>
 
 			<div>
-				<ul className='list-disc pl-8 mt-3'>
+				<ul className='list-disc marker:text-[var(--color-accent)] pl-8 mt-3'>
 					<li>{t('home.competences.first')}</li>
 					<li>{t('home.competences.second')}</li>
 					<li>{t('home.competences.third')}</li>

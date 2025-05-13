@@ -14,7 +14,7 @@ export default function Language() {
 				<h3 className='ml-2'>{t('global.language')}</h3>
 			</header>
 
-			<ul className='list-disc pl-8 mt-3'>
+			<ul className='list-disc marker:text-[var(--color-accent)] pl-8 mt-3'>
 				<li className='mb-2'>
 					<h4>{t('home.language.polish.title')}</h4>
 					{t('home.language.polish.description')}
