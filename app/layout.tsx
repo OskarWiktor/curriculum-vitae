@@ -18,8 +18,26 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: 'Oskar Wiktor',
-	description: 'FrontEnd Developer Curriculum Vitae',
+	title: 'Oskar Wiktor – Frontend Developer',
+	description: 'Portfolio i CV Oskara Wiktora – Frontend Developera',
+	other: {
+		'google-site-verification': 'google7c3f6ea470f6eb28.html',
+	},
+	openGraph: {
+		title: 'Oskar Wiktor – Frontend Developer',
+		description: 'Portfolio i CV Oskara Wiktora – Frontend Developera',
+		url: 'https://cv.oskarwiktor.dev',
+		type: 'website',
+		images: [
+			{
+				url: 'https://cv.oskarwiktor.dev/assets/profile.jpg',
+				width: 1200,
+				height: 630,
+				alt: 'Oskar Wiktor CV',
+			},
+		],
+	},
+	keywords: ['Oskar Wiktor', 'Frontend Developer', 'Next.js', 'React', 'CV', 'Portfolio'],
 };
 
 export default function RootLayout({
