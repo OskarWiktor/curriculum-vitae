@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 	title: 'Oskar Wiktor – Frontend Developer',
 	description: 'Portfolio i CV Oskara Wiktora – Frontend Developera',
 	other: {
-		'google-site-verification': 'google7c3f6ea470f6eb28',
+		'google-site-verification': 'TJAk3U8hdCw97H8pn1y-OwRd_Z0z5IxCIvNCahKf6h0',
 	},
 	creator: 'Oskar Wiktor',
 	robots: 'index, follow',
