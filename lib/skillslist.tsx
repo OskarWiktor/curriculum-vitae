@@ -34,8 +34,6 @@ export type TechCategory = 'tech' | 'tools' | 'design';
 import { JSX } from 'react';
 import { IconType } from 'react-icons';
 
-export type TechCategory = 'tech' | 'tools' | 'design';
-
 export interface StackItem {
 	label: string;
 	icon: IconType | JSX.Element;
