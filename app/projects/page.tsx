@@ -15,7 +15,7 @@ export default function ProjectsPage() {
 
 	return (
 		<>
-			<h1 className='mt-8 md:mt-16'>Projects worth mention</h1>
+			<h1 className='mt-8 md:mt-16'>{t('projects.intro')}</h1>
 			<div className='flex flex-wrap mt-5 md:mt-10 gap-4'>
 				{projectList.map((project) => (
 					<ProjectCard

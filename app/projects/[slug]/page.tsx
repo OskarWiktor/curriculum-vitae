@@ -25,7 +25,7 @@ export default function ProjectDetailPage() {
 					fill
 					className='object-cover object-top rounded-md'
 					src={project.image}
-					alt={slug}
+					alt={project.title}
 				/>
 			</div>
 			<h1>{project.title}</h1>
