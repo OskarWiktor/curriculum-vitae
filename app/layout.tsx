@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: 'Oskar Wiktor – Frontend Developer',
 		description: 'Portfolio i CV Oskara Wiktora – Frontend Developera',
-		url: 'https://cv.oskarwiktor.dev',
+		url: 'https://oskarwiktor-cv.vercel.app/',
 		type: 'website',
 		images: [
 			{
