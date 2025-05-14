@@ -23,9 +23,9 @@ export default function SideNav() {
 			<section className='flex flex-col w-full pt-3 pb-3 md:pt-6 md:pb-6 items-center border-b-1 border-[var(--color-border)]'>
 				<div className='relative w-full h-58 mb-3 md:mb-6'>
 					<Image
-						src='/assets/test.png'
+						src='/assets/profile.jpg'
 						fill
-						alt='test'
+						alt='Oskar Wiktor profile picture for cv'
 						className='rounded-md object-cover object-center'
 					/>
 				</div>
