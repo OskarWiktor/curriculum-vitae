@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 		type: 'website',
 		images: [
 			{
-				url: 'https://www.oskarwiktor-cv.pl/assets/og-cv-image.jpg',
+				url: 'https://www.oskarwiktor-cv.pl/assets/og-cv-image-v2.jpg',
 				width: 1200,
 				height: 630,
 				alt: 'Oskar Wiktor CV',
