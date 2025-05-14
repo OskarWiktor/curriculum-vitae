@@ -51,8 +51,20 @@ export const skillList: StackItem[] = [
 	{ label: 'React', icon: SiReact, category: 'tech' },
 	{ label: 'Next', icon: SiNextdotjs, category: 'tech' },
 	{ label: 'jQuery', icon: SiJquery, category: 'tech' },
-	{ label: '8th Wall', icon: <span>8</span>, category: 'tech' },
-	{ label: 'Material UI', icon: <span>M</span>, category: 'tech' },
+	{
+		label: '8th Wall',
+		icon: (
+			<small className='flex justify-center items-center text-[var(--color-text-muted)]'>8</small>
+		),
+		category: 'tech',
+	},
+	{
+		label: 'Material UI',
+		icon: (
+			<small className='flex justify-center items-center text-[var(--color-text-muted)]'>M</small>
+		),
+		category: 'tech',
+	},
 
 	// Tools
 	{ label: 'Git', icon: SiGit, category: 'tools' },

@@ -28,7 +28,7 @@ export default function SkillsItem({ label, icon, variant = 'big' }: SkillsItemP
 			className={`flex w-fit h-fit items-center gap-2 rounded-md pt-1 pb-1 pr-2 pl-2 ${variantStyle}`}>
 			{typeof icon === 'function'
 				? React.createElement(icon, { className: variantIconStyle })
-				: React.cloneElement(icon, { className: variantIconStyle })}
+				: React.cloneElement(icon)}
 			<p className={variantTextStyle}>{label}</p>
 		</div>
 	);
