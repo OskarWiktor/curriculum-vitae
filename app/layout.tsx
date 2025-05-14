@@ -23,6 +23,9 @@ export const metadata: Metadata = {
 	other: {
 		'google-site-verification': 'google7c3f6ea470f6eb28.html',
 	},
+	creator: 'Oskar Wiktor',
+	robots: 'index, follow',
+	authors: [{ name: 'Oskar Wiktor' }],
 	openGraph: {
 		title: 'Oskar Wiktor – Frontend Developer',
 		description: 'Portfolio i CV Oskara Wiktora – Frontend Developera',
