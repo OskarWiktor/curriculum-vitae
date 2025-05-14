@@ -29,7 +29,11 @@ export default function ProjectDetailPage() {
 				/>
 			</div>
 			<h1>{project.title}</h1>
-			<a href={project.link}>{project.link}</a>
+			<a
+				target='_blank'
+				href={project.link}>
+				{project.link}
+			</a>
 			<p className='mt-10'>
 				<strong>{t('projects.description')}</strong> {project.description}
 			</p>

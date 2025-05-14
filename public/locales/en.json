@@ -113,7 +113,7 @@
 			"challenges": "The biggest challenge was implementing the language switcher, light/dark theme, and font resizing — all of which I developed for the first time using Next.js.",
 			"solutions": "I designed the entire user interface myself, drawing inspiration from Vercel and Notion. I aimed for a consistent and minimalist design. To increase accessibility for international recruiters, I added an English language version. I focused on writing clean, structured code — reusable elements were extracted into components. I chose Next.js for its dynamic routing capabilities (e.g., using slugs) and the ease of managing shared components like the SideNav and Toolbar.",
 			"tasks": "UI design and implementation, dynamic routing, bilingual localization, styling with CSS variables and Tailwind, responsive layout, shared components, accessibility optimization, integration with react-icons and next-icons",
-			"link": "https://cv.oskarwiktor.dev"
+			"link": "https://oskarwiktor-cv.vercel.app/"
 		},
 		"ar-project": {
 			"title": "AR Project",

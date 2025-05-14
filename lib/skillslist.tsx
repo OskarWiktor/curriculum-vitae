@@ -31,11 +31,14 @@ import {
 
 export type TechCategory = 'tech' | 'tools' | 'design';
 
+import { JSX } from 'react';
 import { IconType } from 'react-icons';
+
+export type TechCategory = 'tech' | 'tools' | 'design';
 
 export interface StackItem {
 	label: string;
-	icon: IconType;
+	icon: IconType | JSX.Element;
 	category: TechCategory;
 }
 
@@ -50,6 +53,8 @@ export const skillList: StackItem[] = [
 	{ label: 'React', icon: SiReact, category: 'tech' },
 	{ label: 'Next', icon: SiNextdotjs, category: 'tech' },
 	{ label: 'jQuery', icon: SiJquery, category: 'tech' },
+	{ label: '8th Wall', icon: <span>8</span>, category: 'tech' },
+	{ label: 'Material UI', icon: <span>M</span>, category: 'tech' },
 
 	// Tools
 	{ label: 'Git', icon: SiGit, category: 'tools' },

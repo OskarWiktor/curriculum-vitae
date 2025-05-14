@@ -113,7 +113,7 @@
 			"challenges": "Największym wyzwaniem było zaimplementowanie przełącznika języka, trybu jasnego i ciemnego oraz funkcji zmiany rozmiaru czcionki — wszystkie te elementy realizowałem po raz pierwszy przy użyciu Next.",
 			"solutions": "Samodzielnie zaprojektowałem cały interfejs użytkownika, inspirując się stronami Vercel oraz Notion. Zależało mi na spójności i minimaliźmie. Do projektu dodałem wersję angielską, aby zwiększyć jego dostępność dla rekruterów spoza Polski. Postawiłem na strukturalny, czysty kod — powtarzające się elementy zostały wydzielone jako komponenty. Wykorzystałem Next.js także ze względu na potrzebę dynamicznego routingu (m.in. z użyciem slugów) i możliwość łatwego zarządzania wspólnymi komponentami, takimi jak SideNav czy Toolbar.",
 			"tasks": "Projektowanie i implementacja interfejsu, routing dynamiczny, lokalizacja w dwóch językach, stylowanie z użyciem zmiennych CSS i Tailwinda, projekt responsywny, komponenty wspólne, optymalizacja dostępności, integracja z react-icons i next-icons",
-			"link": "https://cv.oskarwiktor.dev"
+			"link": "https://oskarwiktor-cv.vercel.app/"
 		},
 		"ar-project": {
 			"title": "AR Project",
