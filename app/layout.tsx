@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
 	title: 'Oskar Wiktor – Frontend Developer',
-	description: 'Portfolio i CV Oskara Wiktora – Frontend Developera',
+	description: 'Portfolio i CV',
 	other: {
 		'google-site-verification': 'TJAk3U8hdCw97H8pn1y-OwRd_Z0z5IxCIvNCahKf6h0',
 	},
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 	authors: [{ name: 'Oskar Wiktor' }],
 	openGraph: {
 		title: 'Oskar Wiktor – Frontend Developer',
-		description: 'Portfolio i CV Oskara Wiktora – Frontend Developera',
+		description: 'Portfolio i CV',
 		url: 'https://oskarwiktor-cv.vercel.app/',
 		type: 'website',
 		images: [
