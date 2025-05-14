@@ -16,7 +16,8 @@ export default function Home() {
 			<section
 				id='intro'
 				className='flex flex-col m-auto'>
-				<h1 className='mb-6'>{t('home.hello')}</h1>
+				<span className='mb-1'>{t('home.hello')}</span>
+				<h1 className='mb-4'>{t('home.name')}</h1>
 				<p className='text-[oklch(0.76_0_132)]'>{t('home.intro')}</p>
 			</section>
 			<Skills />
