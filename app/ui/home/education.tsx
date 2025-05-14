@@ -15,9 +15,9 @@ export default function Education() {
 			</header>
 
 			<div className='flex flex-col bg-[var(--color-surface)] rounded-md p-4 mt-3 border-b-1 border-b-[var(--color-accent)]'>
-				<div className='flex justify-between'>
+				<div className='flex flex-col lg:flex-row justify-between'>
 					<h4>{t('home.education.school')}</h4>
-					<p className='bg-[var(--color-surface-hover)] rounded-md pt-1 pb-1 pl-2 pr-2'>
+					<p className='bg-[var(--color-surface-hover)] rounded-md pt-1 pb-1 pl-2 pr-2 w-fit mt-2 lg:mt-0'>
 						10.2024 - 04.2025
 					</p>
 				</div>
