@@ -16,7 +16,10 @@ import { useTranslations } from '@/hooks/useTranslation';
 import Button from './atoms/button';
 
 export default function SideNav() {
-	const { t } = useTranslations();
+	const { t, locale } = useTranslations();
+
+	const cvFile =
+		locale === 'pl' ? 'assets/oskar-wiktor-cv-pl.pdf' : 'assets/oskar-wiktor-cv-en.pdf';
 
 	return (
 		<aside className='flex flex-col w-full md:fixed md:w-64 md:m-2 rounded-md pr-4 pl-4 sm:pr-10 sm:pl-10 md:pr-3 md:pl-3 h-fit'>
@@ -53,10 +56,14 @@ export default function SideNav() {
 					</Link>
 				</div>
 				<div className='flex flex-row w-full justify-center gap-4 md:gap-0 md:justify-around mt-3'>
-					<Button variant='light'>
-						<Download className='w-4 h-4' />
-						<p className='text-xs'>{t('global.cv')}</p>
-					</Button>
+					<Link
+						href={cvFile}
+						download>
+						<Button variant='light'>
+							<Download className='w-4 h-4' />
+							<p className='text-xs'>{t('global.cv')}</p>
+						</Button>
+					</Link>
 					<Link href='/contact'>
 						<Button variant='accent'>
 							<PhoneCall className='w-4 h-4 text-background' />
