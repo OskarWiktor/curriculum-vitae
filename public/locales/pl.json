@@ -21,6 +21,28 @@
 		"tools": "Narzędzia",
 		"design": "Projektowanie",
 		"remote": "Zdalnie",
+		"experience": {
+			"responsibilities": "Zadania:",
+			"now": "Teraz",
+			"fevml": {
+				"description": "Praca przy projektach dla Colgate-Palmolive (m.in Elmex, Palmolive, Sanex, Meridol)",
+				"first": "Tworzenie nowych komponentów oraz funkcjonalności dla stron oraz aplikacji webowych",
+				"second": "Dostosowanie elementów pod wymogi WCAG 2.2",
+				"third": "Rozwój Frontend z code review"
+			},
+			"wmvml": {
+				"description": "Praca przy projektach dla Colgate-Palmolive, Intel, Somatoline, Sherwin-Williams, Alegro, Ikea",
+				"first": "Edycja komponentów i tworzenie stron na ich podstawie",
+				"second": "Edycje contentowe w tym przygotowanie assetów",
+				"third": "Rozwój Frontend z code review"
+			},
+			"own": {
+				"description": "Własna działalność gospodarcza, działalność nierejestrowana",
+				"first": "Tworzenie stron - od wyglądu w Figmie po publikacje",
+				"second": "Edycja stron, przygotowywanie assetów i identyfikacji wizualnych dla firm",
+				"third": "Pomoc w działaniach marketingowych i reklamowych"
+			}
+		},
 		"education": {
 			"school": "Zespół Państwowych Szkół Plastycznych w Krakowie",
 			"description": "Wykształcenie średnie pełne ze specjalizacją:",

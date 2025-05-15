@@ -21,6 +21,28 @@
 		"tools": "Tools",
 		"design": "Design",
 		"remote": "Remote",
+		"experience": {
+			"responsibilities": "Responsibilities:",
+			"now": "Now",
+			"fevml": {
+				"description": "Work on projects for Colgate-Palmolive (m.in Elmex, Palmolive, Sanex, Meridol)",
+				"first": "Developing new components and features for websites and web applications",
+				"second": "Ensuring accessibility compliance (WCAG 2.2)",
+				"third": "Frontend development with code reviews"
+			},
+			"wmvml": {
+				"description": "Work on projects for Colgate-Palmolive, Intel, Somatoline, Sherwin-Williams, Alegro, Ikea",
+				"first": "Editing components and creating new pages based on design specifications",
+				"second": "Content updates and asset preparation",
+				"third": "Frontend development with code reviews"
+			},
+			"own": {
+				"description": "Self-employed",
+				"first": "Designing and developing websites — from Figma mockups to live production",
+				"second": "Editing websites, preparing assets, and creating visual identities for clients",
+				"third": "Supporting marketing and promotional efforts"
+			}
+		},
 		"education": {
 			"school": "The Complex of State Art Schools in Krakow",
 			"description": "Complete secondary education with specialization:",
