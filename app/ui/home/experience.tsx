@@ -121,7 +121,7 @@ export default function Experience() {
 				</div>
 			</div>
 
-			<div className='flex flex-col bg-[var(--color-surface)] rounded-md p-4 mt-4 border-b-1 border-b-[var(--color-text)]'>
+			<div className='flex flex-col bg-[var(--color-surface)] rounded-md p-4 mt-6 border-b-1 border-b-[var(--color-text)]'>
 				<div className='flex flex-col lg:flex-row justify-between'>
 					<div className='flex flex-col md:flex-row'>
 						<Image
@@ -164,7 +164,7 @@ export default function Experience() {
 				</div>
 			</div>
 
-			<div className='flex flex-col bg-[var(--color-surface)] rounded-md p-4 mt-4 border-b-1 border-b-[var(--color-text)]'>
+			<div className='flex flex-col bg-[var(--color-surface)] rounded-md p-4 mt-6 border-b-1 border-b-[var(--color-text)]'>
 				<div className='flex flex-col lg:flex-row justify-between'>
 					<div className='flex flex-col md:flex-row'>
 						<h4 className='mt-2 md:mt-0'>Freelance Graphic Designer & Developer</h4>

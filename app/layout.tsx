@@ -6,6 +6,7 @@ import TopToolbar from './ui/toptoolbar';
 import { LanguageProvider } from '@/hooks/useTranslation';
 import { FontSizeProvider } from '@/hooks/useFontSize';
 import { ThemeProvider } from '@/hooks/useTheme';
+import { Analytics } from '@vercel/analytics/next';
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
@@ -63,6 +64,7 @@ export default function RootLayout({
 						</FontSizeProvider>
 					</LanguageProvider>
 				</ThemeProvider>
+				<Analytics />
 			</body>
 		</html>
 	);
