@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 📄 CV Website
 
-## Getting Started
+A minimalist, responsive CV website created for the purpose of the recruitment process.
 
-First, run the development server:
+### 🧠 Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This project allowed me to deepen my understanding of **Next.js** while designing and developing a fully functional personal site. The goal was to showcase both my technical and design skills in one place and provide recruiters with easy access to my portfolio.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🚧 Challenges
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Implementing a **language switcher**
+- Adding **light/dark theme toggle**
+- Developing a **font resizing system**
+- Structuring the code for **component reuse**  
+All of these were implemented for the first time using Next.js.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🧩 Solutions
 
-## Learn More
+- Designed the UI myself, drawing inspiration from **Vercel** and **Notion**
+- Focused on a **clean, consistent, and minimalist aesthetic**
+- Added an English version to improve accessibility for international recruiters
+- Used **dynamic routing** with slugs
+- Separated logic into **reusable components** (e.g., `SideNav`, `Toolbar`)
+- Ensured responsiveness
 
-To learn more about Next.js, take a look at the following resources:
+### 🛠 Technologies
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.js
+- TypeScript
+- Tailwind CSS
+- React Icons
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### ✅ Tasks completed
 
-## Deploy on Vercel
+- UI design and implementation
+- Dynamic routing
+- Bilingual localization (PL/EN)
+- Styling with Tailwind
+- Font scaling system
+- Shared components
+- Accessibility improvements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+👉 **Live version**: [www.oskarwiktor-cv.pl](https://www.oskarwiktor-cv.pl)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
