@@ -7,6 +7,7 @@ import { LanguageProvider } from '@/hooks/useTranslation';
 import { FontSizeProvider } from '@/hooks/useFontSize';
 import { ThemeProvider } from '@/hooks/useTheme';
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
@@ -65,6 +66,7 @@ export default function RootLayout({
 					</LanguageProvider>
 				</ThemeProvider>
 				<Analytics />
+				<SpeedInsights />
 			</body>
 		</html>
 	);
