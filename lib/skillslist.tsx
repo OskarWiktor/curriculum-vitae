@@ -70,6 +70,20 @@ export const skillList: StackItem[] = [
 		),
 		category: 'libraries',
 	},
+	{
+		label: 'react-icons',
+		icon: (
+			<small className='flex justify-center items-center text-[var(--color-text-muted)]'>R</small>
+		),
+		category: 'libraries',
+	},
+	{
+		label: 'react-router',
+		icon: (
+			<small className='flex justify-center items-center text-[var(--color-text-muted)]'>R</small>
+		),
+		category: 'libraries',
+	},
 	{ label: 'Jest', icon: SiJest, category: 'libraries' },
 
 	// Concepts
@@ -123,7 +137,7 @@ export const skillList: StackItem[] = [
 		icon: (
 			<small className='flex justify-center items-center text-[var(--color-text-muted)]'>8</small>
 		),
-		category: 'tech',
+		category: 'tools',
 	},
 	{ label: 'npm', icon: SiNpm, category: 'tools' },
 	{ label: 'Yarn', icon: SiYarn, category: 'tools' },
