@@ -22,7 +22,7 @@ export default function SideNavItem({ href, icon, label, subItems }: SideNavItem
 
 	const toggleOpen = () => setIsOpen((prev) => !prev);
 
-	const animationDuration = subItems ? Math.min(subItems.length * 0.1, 0.5) : 3;
+	const animationDuration = 0.5;
 
 	return (
 		<div className='flex flex-col'>
@@ -53,14 +53,22 @@ export default function SideNavItem({ href, icon, label, subItems }: SideNavItem
 						initial={{ opacity: 0, height: 0 }}
 						animate={{ opacity: 1, height: 'auto' }}
 						exit={{ opacity: 0, height: 0 }}
-						transition={{ duration: animationDuration, ease: 'easeInOut' }}
-						className='flex flex-col ml-6 mt-1 space-y-1'>
+						transition={{
+							duration: animationDuration,
+							ease: 'easeInOut',
+							delayChildren: 0.1,
+							staggerChildren: 0.05,
+						}}
+						className='flex flex-col ml-6 mt-1 space-y-1 overflow-hidden'>
 						{subItems.map((item) => (
-							<Link
+							<motion.div
 								key={item.href}
-								href={item.href}>
-								{item.label}
-							</Link>
+								initial={{ opacity: 0 }}
+								animate={{ opacity: 1 }}
+								exit={{ opacity: 0 }}
+								transition={{ duration: 0.2 }}>
+								<Link href={item.href}>{item.label}</Link>
+							</motion.div>
 						))}
 					</motion.div>
 				)}
