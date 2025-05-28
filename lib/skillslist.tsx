@@ -28,6 +28,8 @@ import {
 	SiElementor,
 	SiW3Schools,
 	SiJest,
+	SiYarn,
+	SiNpm,
 } from 'react-icons/si';
 
 export type TechCategory = 'tech' | 'tools' | 'design' | 'cms' | 'concepts' | 'libraries';
@@ -52,13 +54,6 @@ export const skillList: StackItem[] = [
 	{ label: 'React', icon: SiReact, category: 'tech' },
 	{ label: 'Next', icon: SiNextdotjs, category: 'tech' },
 	{ label: 'jQuery', icon: SiJquery, category: 'tech' },
-	{
-		label: '8th Wall',
-		icon: (
-			<small className='flex justify-center items-center text-[var(--color-text-muted)]'>8</small>
-		),
-		category: 'tech',
-	},
 
 	// Libraries
 	{
@@ -123,6 +118,15 @@ export const skillList: StackItem[] = [
 	{ label: 'Miro', icon: SiMiro, category: 'tools' },
 	{ label: 'Confluence', icon: SiConfluence, category: 'tools' },
 	{ label: 'Firebase', icon: SiFirebase, category: 'tools' },
+	{
+		label: '8th Wall',
+		icon: (
+			<small className='flex justify-center items-center text-[var(--color-text-muted)]'>8</small>
+		),
+		category: 'tech',
+	},
+	{ label: 'npm', icon: SiNpm, category: 'tools' },
+	{ label: 'Yarn', icon: SiYarn, category: 'tools' },
 
 	// CMS
 	{ label: 'Adobe Experience Manager', icon: SiAdobe, category: 'cms' },
