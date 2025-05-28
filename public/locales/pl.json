@@ -18,7 +18,10 @@
 		"name": "Mam na imię Oskar i jestem Frontend Developerem.",
 		"intro": "Moja przygoda z programowaniem zaczęła się w 2021 roku. Przez prawie 4 lata pracowałem w VML, najpierw jako Web Master, a potem jako Junior Frontend Developer. Interesuję się sztuką, psychologią i grafiką komputerową — co pomaga mi zachować UI i UX projektów, nad którymi pracuję. Szukam pracy, która przyniesie mi dalsze możliwości rozwoju.",
 		"technologies": "Technologie",
+		"libraries": "Biblioteki",
+		"concepts": "Koncepcje",
 		"tools": "Narzędzia",
+		"cms": "CMS",
 		"design": "Projektowanie",
 		"remote": "Zdalnie",
 		"experience": {
