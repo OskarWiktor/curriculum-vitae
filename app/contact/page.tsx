@@ -1,5 +1,5 @@
-import ContactAddress from '../ui/contact/contactaddress';
-import ContactForm from '../ui/contact/contactform';
+import ContactAddress from '../ui/contact/ContactAddress';
+import ContactForm from '../ui/contact/ContactForm';
 
 export default function Page() {
 	return (

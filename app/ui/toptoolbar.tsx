@@ -1,7 +1,7 @@
 'use client';
 
 import { Moon, Sun, TextDown, TextUp } from '@deemlol/next-icons';
-import Button from './atoms/button';
+import Button from './atoms/Button';
 import { useTranslations } from '@/hooks/useTranslation';
 import { motion } from 'framer-motion';
 import { useFontSize } from '@/hooks/useFontSize';

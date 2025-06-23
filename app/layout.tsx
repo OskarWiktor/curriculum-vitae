@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import SideNav from './ui/sidenav';
-import TopToolbar from './ui/toptoolbar';
+import SideNav from './ui/Sidenav';
+import TopToolbar from './ui/TopToolbar';
 import { LanguageProvider } from '@/hooks/useTranslation';
 import { FontSizeProvider } from '@/hooks/useFontSize';
 import { ThemeProvider } from '@/hooks/useTheme';

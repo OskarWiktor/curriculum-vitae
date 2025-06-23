@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from '@/hooks/useTranslation';
-import ProjectCard from '../ui/projects/projectcard';
+import ProjectCard from '../ui/projects/ProjectCard';
 
 export default function ProjectsPage() {
 	const { t } = useTranslations();

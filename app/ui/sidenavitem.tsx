@@ -3,7 +3,7 @@
 import { ReactNode, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
-import Button from './atoms/button';
+import Button from './atoms/Button';
 import { ChevronDown } from '@deemlol/next-icons';
 interface SubItem {
 	href: string;

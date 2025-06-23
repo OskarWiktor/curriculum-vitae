@@ -11,9 +11,9 @@ import {
 } from '@deemlol/next-icons';
 import Link from 'next/link';
 import Image from 'next/image';
-import SideNavItem from './sidenavitem';
+import SideNavItem from './Sidenavitem';
 import { useTranslations } from '@/hooks/useTranslation';
-import Button from './atoms/button';
+import Button from './atoms/Button';
 
 export default function SideNav() {
 	const { t, locale } = useTranslations();

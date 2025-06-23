@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from '@/hooks/useTranslation';
-import Button from '../atoms/button';
+import Button from '../atoms/Button';
 import { useState } from 'react';
 
 export default function ContactForm() {

@@ -7,7 +7,7 @@ const tools = skillList.filter((i) => i.category === 'tools');
 const cms = skillList.filter((i) => i.category === 'cms');
 const design = skillList.filter((i) => i.category === 'design');
 
-import SkillsItem from './skillsitem';
+import SkillsItem from './SkillsItem';
 import { useTranslations } from '@/hooks/useTranslation';
 import { CheckCircle } from '@deemlol/next-icons';
 
