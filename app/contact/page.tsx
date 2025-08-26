@@ -1,5 +1,4 @@
 import ContactAddress from '../ui/contact/ContactAddress';
-import ContactForm from '../ui/contact/ContactForm';
 
 export default function Page() {
 	return (
@@ -8,9 +7,7 @@ export default function Page() {
 				<ContactAddress />
 			</div>
 
-			<div className='w-full lg:w-1/2 '>
-				<ContactForm />
-			</div>
+			<div className='w-full lg:w-1/2 '></div>
 		</div>
 	);
 }
