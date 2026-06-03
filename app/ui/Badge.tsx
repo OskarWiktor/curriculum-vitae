@@ -1,14 +1,13 @@
 import { IconType } from 'react-icons';
-import { JSX } from 'react';
 import React from 'react';
 
-interface SkillsItemProps {
-	icon: IconType | JSX.Element;
+interface BadgeItemProps {
+	icon: IconType;
 	label: string;
 	variant?: 'big' | 'small';
 }
 
-export default function SkillsItem({ label, icon, variant = 'big' }: SkillsItemProps) {
+export default function BadgeItem({ label, icon, variant = 'big' }: BadgeItemProps) {
 	let variantStyle = '';
 	let variantIconStyle = '';
 	let variantTextStyle = '';
@@ -20,15 +19,12 @@ export default function SkillsItem({ label, icon, variant = 'big' }: SkillsItemP
 	} else {
 		variantStyle = 'bg-[var(--color-surface)] hover:bg-[var(--color-surface-hover)]';
 		variantIconStyle = 'w-6 h-6 text-[var(--color-text-muted)]';
-		variantTextStyle = '';
+		variantTextStyle = 'text-sm';
 	}
 
 	return (
-		<div
-			className={`flex w-fit h-fit items-center gap-2 rounded-md pt-1 pb-1 pr-2 pl-2 ${variantStyle}`}>
-			{typeof icon === 'function'
-				? React.createElement(icon, { className: variantIconStyle })
-				: React.cloneElement(icon)}
+		<div className={`flex w-fit h-fit items-center gap-2 rounded-sm px-3 py-2 ${variantStyle}`}>
+			{React.createElement(icon, { className: variantIconStyle })}
 			<p className={variantTextStyle}>{label}</p>
 		</div>
 	);

@@ -3,32 +3,11 @@ import { ReactNode } from 'react';
 interface ButtonProps {
 	children: ReactNode;
 	onClick?: () => void;
-	size?: 'small' | 'medium' | 'big';
 	variant?: 'default' | 'light' | 'accent';
 	type?: 'submit' | 'reset' | 'button' | undefined;
 }
 
-export default function Button({
-	size = 'medium',
-	variant = 'default',
-	children,
-	onClick,
-	type,
-}: ButtonProps) {
-	let sizeClass = '';
-
-	switch (size) {
-		case 'small':
-			sizeClass = 'px-1 py-1';
-			break;
-		case 'medium':
-			sizeClass = 'px-2 py-1';
-			break;
-		case 'big':
-			sizeClass = 'px-4 py-2';
-			break;
-	}
-
+export default function Button({ variant = 'default', children, onClick, type }: ButtonProps) {
 	let variantClass = '';
 	let variantChildrenClass = '';
 
@@ -46,16 +25,19 @@ export default function Button({
 			variantChildrenClass =
 				'group-hover:text-[var(--color-background)] text-[var(--color-background)]';
 			break;
+		default:
+			variantClass = 'bg-[var(--color-surface)] hover:bg-[var(--color-surface-hover)]';
+			variantChildrenClass = 'group-hover:text-[var(--color-text)]';
 	}
 
 	return (
 		<button
 			onClick={onClick}
 			type={type}
-			className={`flex justify-center items-center group cursor-pointer w-fit h-fit rounded-md ${variantClass} ${sizeClass}`}>
-			<span className={`flex items-center gap-x-2 w-full h-full ${variantChildrenClass}`}>
+			className={`flex justify-center items-center group cursor-pointer w-fit h-fit rounded-md px-3 py-2 ${variantClass}`}>
+			<p className={`flex items-center gap-x-2 w-full h-full ${variantChildrenClass}`}>
 				{children}
-			</span>
+			</p>
 		</button>
 	);
 }

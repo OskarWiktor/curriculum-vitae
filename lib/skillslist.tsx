@@ -1,8 +1,6 @@
 import {
 	SiAdobe,
 	SiAdobeillustrator,
-	SiAdobeindesign,
-	SiAdobelightroom,
 	SiAdobephotoshop,
 	SiAdobexd,
 	SiBitbucket,
@@ -10,7 +8,6 @@ import {
 	SiCss3,
 	SiDrupal,
 	SiFigma,
-	SiFirebase,
 	SiGit,
 	SiHtml5,
 	SiJavascript,
@@ -25,26 +22,19 @@ import {
 	SiTypescript,
 	SiWebflow,
 	SiWordpress,
-	SiElementor,
-	SiW3Schools,
-	SiJest,
-	SiYarn,
-	SiNpm,
 } from 'react-icons/si';
 
 export type TechCategory = 'tech' | 'tools' | 'design' | 'cms' | 'concepts' | 'libraries';
 
-import { JSX } from 'react';
 import { IconType } from 'react-icons';
 
 export interface StackItem {
 	label: string;
-	icon: IconType | JSX.Element;
+	icon: IconType;
 	category: TechCategory;
 }
 
 export const skillList: StackItem[] = [
-	// Technologies
 	{ label: 'HTML', icon: SiHtml5, category: 'tech' },
 	{ label: 'CSS', icon: SiCss3, category: 'tech' },
 	{ label: 'SCSS', icon: SiSass, category: 'tech' },
@@ -55,75 +45,6 @@ export const skillList: StackItem[] = [
 	{ label: 'Next', icon: SiNextdotjs, category: 'tech' },
 	{ label: 'jQuery', icon: SiJquery, category: 'tech' },
 
-	// Libraries
-	{
-		label: 'Material UI',
-		icon: (
-			<small className='flex justify-center items-center text-[var(--color-text-muted)]'>M</small>
-		),
-		category: 'libraries',
-	},
-	{
-		label: 'react-use',
-		icon: (
-			<small className='flex justify-center items-center text-[var(--color-text-muted)]'>R</small>
-		),
-		category: 'libraries',
-	},
-	{
-		label: 'react-icons',
-		icon: (
-			<small className='flex justify-center items-center text-[var(--color-text-muted)]'>R</small>
-		),
-		category: 'libraries',
-	},
-	{
-		label: 'react-router',
-		icon: (
-			<small className='flex justify-center items-center text-[var(--color-text-muted)]'>R</small>
-		),
-		category: 'libraries',
-	},
-	{ label: 'Jest', icon: SiJest, category: 'libraries' },
-
-	// Concepts
-	{ label: 'WCAG', icon: SiW3Schools, category: 'concepts' },
-	{
-		label: 'Atomic Design',
-		icon: (
-			<small className='flex justify-center items-center text-[var(--color-text-muted)]'>A</small>
-		),
-		category: 'concepts',
-	},
-	{
-		label: 'SOLID',
-		icon: (
-			<small className='flex justify-center items-center text-[var(--color-text-muted)]'>S</small>
-		),
-		category: 'concepts',
-	},
-	{
-		label: 'REST',
-		icon: (
-			<small className='flex justify-center items-center text-[var(--color-text-muted)]'>R</small>
-		),
-		category: 'concepts',
-	},
-	{
-		label: 'BEM',
-		icon: (
-			<small className='flex justify-center items-center text-[var(--color-text-muted)]'>B</small>
-		),
-		category: 'concepts',
-	},
-	{
-		label: 'OOP',
-		icon: (
-			<small className='flex justify-center items-center text-[var(--color-text-muted)]'>O</small>
-		),
-		category: 'concepts',
-	},
-
 	// Tools
 	{ label: 'Git', icon: SiGit, category: 'tools' },
 	{ label: 'Bitbucket', icon: SiBitbucket, category: 'tools' },
@@ -131,22 +52,11 @@ export const skillList: StackItem[] = [
 	{ label: 'Trello', icon: SiTrello, category: 'tools' },
 	{ label: 'Miro', icon: SiMiro, category: 'tools' },
 	{ label: 'Confluence', icon: SiConfluence, category: 'tools' },
-	{ label: 'Firebase', icon: SiFirebase, category: 'tools' },
-	{
-		label: '8th Wall',
-		icon: (
-			<small className='flex justify-center items-center text-[var(--color-text-muted)]'>8</small>
-		),
-		category: 'tools',
-	},
-	{ label: 'npm', icon: SiNpm, category: 'tools' },
-	{ label: 'Yarn', icon: SiYarn, category: 'tools' },
 
 	// CMS
 	{ label: 'Adobe Experience Manager', icon: SiAdobe, category: 'cms' },
 	{ label: 'Webflow', icon: SiWebflow, category: 'cms' },
 	{ label: 'Wordpress', icon: SiWordpress, category: 'cms' },
-	{ label: 'Elementor Pro', icon: SiElementor, category: 'cms' },
 	{ label: 'Drupal', icon: SiDrupal, category: 'cms' },
 
 	// Design
@@ -154,6 +64,16 @@ export const skillList: StackItem[] = [
 	{ label: 'Adobe Photoshop', icon: SiAdobephotoshop, category: 'design' },
 	{ label: 'Adobe Illustrator', icon: SiAdobeillustrator, category: 'design' },
 	{ label: 'Adobe Xd', icon: SiAdobexd, category: 'design' },
-	{ label: 'Adobe InDesign', icon: SiAdobeindesign, category: 'design' },
-	{ label: 'Adobe Lightroom', icon: SiAdobelightroom, category: 'design' },
 ];
+
+const skillByLabel = new Map(skillList.map((item) => [item.label, item]));
+
+/**
+ * Resolves a list of skill labels to their matching {@link StackItem}s,
+ * preserving the order of `labels` and skipping any label without a match.
+ */
+export function getSkillsByLabels(labels: string[]): StackItem[] {
+	return labels
+		.map((label) => skillByLabel.get(label))
+		.filter((item): item is StackItem => item !== undefined);
+}

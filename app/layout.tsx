@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: 'Oskar Wiktor – Frontend Developer',
+	title: 'Oskar Wiktor - Frontend / React Developer',
 	description: 'Portfolio i CV',
 	other: {
 		'google-site-verification': 'TJAk3U8hdCw97H8pn1y-OwRd_Z0z5IxCIvNCahKf6h0',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 	robots: 'index, follow',
 	authors: [{ name: 'Oskar Wiktor' }],
 	openGraph: {
-		title: 'Oskar Wiktor – Frontend Developer',
+		title: 'Oskar Wiktor - Frontend / React Developer',
 		description: 'Portfolio i CV',
 		url: 'https://www.oskarwiktor-cv.pl',
 		type: 'website',
@@ -42,7 +42,6 @@ export const metadata: Metadata = {
 			},
 		],
 	},
-	keywords: ['Oskar Wiktor', 'Frontend Developer', 'Next.js', 'React', 'CV', 'Portfolio'],
 };
 
 export default function RootLayout({
@@ -53,7 +52,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased flex-col md:flex-row flex`}>
+				className={`${geistSans.variable} ${geistMono.variable} antialiased flex-col md:flex-row flex m-2 md:m-4 `}>
 				<ThemeProvider>
 					<LanguageProvider>
 						<FontSizeProvider>

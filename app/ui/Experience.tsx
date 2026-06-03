@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import SkillsItem from './SkillsItem';
+import Badge from './Badge';
 import { useTranslations } from '@/hooks/useTranslation';
 import { Briefcase } from '@deemlol/next-icons';
-import { skillList, StackItem } from '../../lib/skillslist';
+import { getSkillsByLabels } from '../../lib/skillslist';
 
 const vmlFEDLabels = [
 	'HTML',
@@ -107,11 +107,8 @@ export default function Experience() {
 					<li>{t('home.experience.fevml.third')}</li>
 				</ul>
 				<div className='flex flex-wrap gap-2 pt-4'>
-					{vmlFEDLabels
-						.map((label) => skillList.find((item) => item.label === label))
-						.filter((item): item is StackItem => item !== undefined)
-						.map(({ label, icon }) => (
-							<SkillsItem
+					{getSkillsByLabels(vmlFEDLabels).map(({ label, icon }) => (
+							<Badge
 								key={label}
 								label={label}
 								icon={icon}
@@ -150,11 +147,8 @@ export default function Experience() {
 					<li>{t('home.experience.wmvml.third')}</li>
 				</ul>
 				<div className='flex flex-wrap gap-2 pt-4'>
-					{vmlWMLabels
-						.map((label) => skillList.find((item) => item.label === label))
-						.filter((item): item is StackItem => item !== undefined)
-						.map(({ label, icon }) => (
-							<SkillsItem
+					{getSkillsByLabels(vmlWMLabels).map(({ label, icon }) => (
+							<Badge
 								key={label}
 								label={label}
 								icon={icon}
@@ -187,11 +181,8 @@ export default function Experience() {
 					<li>{t('home.experience.own.third')}</li>
 				</ul>
 				<div className='flex flex-wrap gap-2 pt-4'>
-					{ownLabels
-						.map((label) => skillList.find((item) => item.label === label))
-						.filter((item): item is StackItem => item !== undefined)
-						.map(({ label, icon }) => (
-							<SkillsItem
+					{getSkillsByLabels(ownLabels).map(({ label, icon }) => (
+							<Badge
 								key={label}
 								label={label}
 								icon={icon}

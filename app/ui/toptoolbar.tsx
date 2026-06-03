@@ -35,18 +35,14 @@ export default function TopToolbar() {
 					EN
 				</motion.span>
 			</Button>
-			<Button
-				size='small'
-				onClick={toggleFontSize}>
+			<Button onClick={toggleFontSize}>
 				{isBigFont ? (
 					<TextDown className='w-6 h-6 group-hover:text-[var(--color-text)]' />
 				) : (
 					<TextUp className='w-6 h-6 group-hover:text-[var(--color-text)]' />
 				)}
 			</Button>
-			<Button
-				size='small'
-				onClick={toggleTheme}>
+			<Button onClick={toggleTheme}>
 				{theme === 'dark' ? (
 					<Moon className='w-5 h-5 m-[2px] group-hover:text-[var(--color-text)]' />
 				) : (

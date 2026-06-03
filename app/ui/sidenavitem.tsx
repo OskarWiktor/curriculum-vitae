@@ -35,9 +35,7 @@ export default function SideNavItem({ href, icon, label, subItems }: SideNavItem
 				</Link>
 
 				{subItems && (
-					<Button
-						onClick={toggleOpen}
-						size='small'>
+					<Button onClick={toggleOpen}>
 						<motion.div
 							animate={{ rotate: isOpen ? 180 : 0 }}
 							transition={{ duration: animationDuration }}>

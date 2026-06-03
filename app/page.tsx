@@ -5,14 +5,13 @@ import Skills from './ui/Skills';
 import Experience from './ui/Experience';
 import Education from './ui/Education';
 import Competences from './ui/Competences';
-import Aspirations from './ui/Aspirations';
 import Language from './ui/Language';
 
 export default function Home() {
 	const { t } = useTranslations();
 
 	return (
-		<div className='flex flex-col w-full mt-8 md:mt-16 gap-20'>
+		<div className='flex flex-col w-full  md:m-2 gap-12'>
 			<section
 				id='intro'
 				className='flex flex-col m-auto'>
@@ -21,7 +20,6 @@ export default function Home() {
 				<p className='text-[oklch(0.76_0_132)]'>{t('home.intro')}</p>
 			</section>
 			<Skills />
-			<Aspirations />
 			<Experience />
 			<Competences />
 			<Education />

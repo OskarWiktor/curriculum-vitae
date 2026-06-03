@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import SkillsItem from './SkillsItem';
-import { skillList } from '@/lib/skillslist';
+import Badge from './Badge';
+import { getSkillsByLabels } from '@/lib/skillslist';
 
 interface ProjectCardProps {
 	slug: string;
@@ -28,11 +28,8 @@ export default function ProjectCard({ slug, title, short, image, stack }: Projec
 				<h3 className='text-md pb-1'>{title}</h3>
 				<p className='text-xs pb-2'>{short}</p>
 				<div className='flex flex-wrap gap-1'>
-					{stack
-						.map((label) => skillList.find((item) => item.label === label))
-						.filter((item): item is (typeof skillList)[number] => item !== undefined)
-						.map(({ label, icon }) => (
-							<SkillsItem
+					{getSkillsByLabels(stack).map(({ label, icon }) => (
+							<Badge
 								key={label}
 								label={label}
 								icon={icon}
