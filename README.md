@@ -19,4 +19,4 @@ A minimalist, responsive CV website created for the purpose of the recruitment p
 - Shared components
 - Accessibility improvements
 
-**Live version**: [www.oskarwiktor-cv.pl](https://www.oskarwiktor-cv.pl)
+**Live version**: [oskar-wiktor.vercel.app/(https://oskar-wiktor.vercel.app/)
