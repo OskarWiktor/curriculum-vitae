@@ -2,7 +2,7 @@ import Image from 'next/image';
 import SkillsItem from './SkillsItem';
 import { useTranslations } from '@/hooks/useTranslation';
 import { Briefcase } from '@deemlol/next-icons';
-import { skillList, StackItem } from '../../../lib/skillslist';
+import { skillList, StackItem } from '../../lib/skillslist';
 
 const vmlFEDLabels = [
 	'HTML',

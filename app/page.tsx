@@ -1,12 +1,12 @@
 'use client';
 
 import { useTranslations } from '@/hooks/useTranslation';
-import Skills from './ui/home/Skills';
-import Experience from './ui/home/Experience';
-import Education from './ui/home/Education';
-import Competences from './ui/home/Competences';
-import Aspirations from './ui/home/Aspirations';
-import Language from './ui/home/Language';
+import Skills from './ui/Skills';
+import Experience from './ui/Experience';
+import Education from './ui/Education';
+import Competences from './ui/Competences';
+import Aspirations from './ui/Aspirations';
+import Language from './ui/Language';
 
 export default function Home() {
 	const { t } = useTranslations();

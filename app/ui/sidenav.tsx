@@ -13,7 +13,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import SideNavItem from './Sidenavitem';
 import { useTranslations } from '@/hooks/useTranslation';
-import Button from './atoms/Button';
+import Button from './Button';
 
 export default function SideNav() {
 	const { t, locale } = useTranslations();

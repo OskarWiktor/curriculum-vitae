@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import SkillsItem from '../home/SkillsItem';
+import SkillsItem from './SkillsItem';
 import { skillList } from '@/lib/skillslist';
 
 interface ProjectCardProps {

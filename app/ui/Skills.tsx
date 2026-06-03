@@ -1,4 +1,4 @@
-import { skillList } from '../../../lib/skillslist';
+import { skillList } from '../../lib/skillslist';
 
 const tech = skillList.filter((i) => i.category === 'tech');
 const libraries = skillList.filter((i) => i.category === 'libraries');
