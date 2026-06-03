@@ -7,10 +7,10 @@ interface ButtonProps {
 	type?: 'submit' | 'reset' | 'button' | undefined;
 }
 
-export default function Button({ variant = 'default', children, onClick, type }: ButtonProps) {
-	let variantClass = '';
-	let variantChildrenClass = '';
+let variantClass = '';
+let variantChildrenClass = '';
 
+export default function Button({ variant = 'default', children, onClick, type }: ButtonProps) {
 	switch (variant) {
 		case 'default':
 			variantClass = 'bg-[var(--color-surface)] hover:bg-[var(--color-surface-hover)]';
